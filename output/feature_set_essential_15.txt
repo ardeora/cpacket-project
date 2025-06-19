@@ -1,0 +1,19 @@
+# Essential_15 Feature Set
+# Generated from correlation analysis
+# Total features: 15
+
+fwd_mode_header_bytes
+fwd_packets_IAT_total
+packet_IAT_max
+src_port
+dst_port
+fwd_init_win_bytes
+fwd_total_header_bytes
+total_header_bytes
+median_packets_delta_time
+syn_flag_percentage_in_total
+packets_rate
+duration
+bwd_packets_IAT_total
+median_packets_delta_len
+ack_flag_percentage_in_total
