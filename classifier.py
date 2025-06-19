@@ -21,7 +21,9 @@ class DDosClassifier:
     
     def __init__(self, data_path: str = 'datasets/ddos.parquet', 
                  features_dir: str = 'features/',
-                 models_dir: str = 'saved_models/'):
+                 models_dir: str = 'saved_models/',
+                 plots_dir: str = 'plots/',
+                 results_dir: str = 'results/'):
         """
         Initialize the classifier with paths to data and feature configurations.
         
@@ -34,6 +36,10 @@ class DDosClassifier:
         self.features_dir = Path(features_dir)
         self.models_dir = Path(models_dir)
         self.models_dir.mkdir(exist_ok=True)
+        self.plots_dir = Path(plots_dir)
+        self.plots_dir.mkdir(exist_ok=True)
+        self.results_dir = Path(results_dir)
+        self.results_dir.mkdir(exist_ok=True)
         
         self.df = None
         self.label_encoder = None
@@ -144,10 +150,7 @@ class DDosClassifier:
         
         return X_train, X_test, y_train, y_test
     
-    def train_random_forest(self, X_train: np.ndarray, y_train: np.ndarray,
-                           n_estimators: int = 200, max_depth: Optional[int] = None,
-                           min_samples_split: int = 5, min_samples_leaf: int = 2,
-                           random_state: int = 42) -> RandomForestClassifier:
+    def train_random_forest(self, X_train: np.ndarray, y_train: np.ndarray, n_estimators: int = 200, **rf_params) -> RandomForestClassifier:
         """
         Train a Random Forest classifier with optimized parameters.
         
@@ -155,10 +158,6 @@ class DDosClassifier:
             X_train: Training features
             y_train: Training labels
             n_estimators: Number of trees in the forest
-            max_depth: Maximum depth of trees (None for unlimited)
-            min_samples_split: Minimum samples required to split a node
-            min_samples_leaf: Minimum samples required at a leaf node
-            random_state: Random seed
             
         Returns:
             Trained RandomForestClassifier
@@ -167,12 +166,9 @@ class DDosClassifier:
         
         rf_classifier = RandomForestClassifier(
             n_estimators=n_estimators,
-            max_depth=max_depth,
-            min_samples_split=min_samples_split,
-            min_samples_leaf=min_samples_leaf,
-            random_state=random_state,
             n_jobs=-1,  # Use all available CPU cores
-            class_weight='balanced'  # Handle imbalanced classes
+            class_weight='balanced',  # Handle imbalanced classes
+            **rf_params  # Additional parameters for flexibility
         )
         
         rf_classifier.fit(X_train, y_train)
@@ -277,11 +273,11 @@ class DDosClassifier:
         plt.tight_layout()
         
         if save_plots:
-            plot_path = self.models_dir / f'{method_name}_results.png'
+            plot_path = self.plots_dir / f'{method_name}_results.png'
             plt.savefig(plot_path, dpi=300, bbox_inches='tight')
             print(f"Results plot saved to: {plot_path}")
         
-        plt.show()
+        # plt.show()
     
     def save_model(self, model: RandomForestClassifier, method_name: str, 
                   features: List[str], results: Dict):
@@ -302,17 +298,8 @@ class DDosClassifier:
         encoder_path = self.models_dir / f'label_encoder_{method_name}.joblib'
         joblib.dump(self.label_encoder, encoder_path)
         
-        # Save features list
-        features_path = self.models_dir / f'features_{method_name}.json'
-        with open(features_path, 'w') as f:
-            json.dump({
-                'features': features,
-                'n_features': len(features),
-                'method': method_name
-            }, f, indent=2)
-        
         # Save results summary
-        results_path = self.models_dir / f'results_{method_name}.json'
+        results_path = self.results_dir / f'results_{method_name}.json'
         results_summary = {
             'method': method_name,
             'accuracy': results['accuracy'],
@@ -325,7 +312,6 @@ class DDosClassifier:
         print(f"\nModel artifacts saved:")
         print(f"  - Model: {model_path}")
         print(f"  - Encoder: {encoder_path}")
-        print(f"  - Features: {features_path}")
         print(f"  - Results: {results_path}")
     
     def train_all_methods(self, max_features: int = 40, **rf_params):
@@ -427,11 +413,7 @@ def main():
     
     # Train models for all methods with 40 features each
     classifier.train_all_methods(
-        max_features=40,
         n_estimators=200,
-        max_depth=20,
-        min_samples_split=5,
-        min_samples_leaf=2,
         random_state=42
     )
     

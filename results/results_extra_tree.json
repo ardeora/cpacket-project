@@ -1,0 +1,38 @@
+{
+  "method": "extra_tree",
+  "accuracy": 0.949823772652846,
+  "n_features": 40,
+  "classification_report": {
+    "Attack": {
+      "precision": 0.9420420246110982,
+      "recall": 0.9522398568369173,
+      "f1-score": 0.9471134908013947,
+      "support": 34087.0
+    },
+    "Benign": {
+      "precision": 0.9773010400672133,
+      "recall": 0.9660776676785612,
+      "f1-score": 0.9716569453445668,
+      "support": 69836.0
+    },
+    "Suspicious": {
+      "precision": 0.5964417444131048,
+      "recall": 0.6582854406130269,
+      "f1-score": 0.625839499146272,
+      "support": 4176.0
+    },
+    "accuracy": 0.949823772652846,
+    "macro avg": {
+      "precision": 0.8385949363638056,
+      "recall": 0.8588676550428351,
+      "f1-score": 0.8482033117640778,
+      "support": 108099.0
+    },
+    "weighted avg": {
+      "precision": 0.9514696958502996,
+      "recall": 0.949823772652846,
+      "f1-score": 0.9505582636700167,
+      "support": 108099.0
+    }
+  }
+}
