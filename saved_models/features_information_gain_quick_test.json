@@ -1,0 +1,26 @@
+{
+  "features": [
+    "duration",
+    "fwd_mean_header_bytes",
+    "packets_IAT_mean",
+    "fwd_packets_IAT_median",
+    "total_header_bytes",
+    "fwd_median_header_bytes",
+    "packet_IAT_max",
+    "fwd_packets_IAT_mode",
+    "max_header_bytes",
+    "fwd_mode_header_bytes",
+    "packet_IAT_min",
+    "bwd_packets_IAT_total",
+    "min_header_bytes",
+    "fwd_init_win_bytes",
+    "packet_IAT_total",
+    "handshake_duration",
+    "mean_header_bytes",
+    "packets_rate",
+    "packets_IAT_median",
+    "mean_packets_delta_time"
+  ],
+  "n_features": 20,
+  "method": "information_gain_quick_test"
+}

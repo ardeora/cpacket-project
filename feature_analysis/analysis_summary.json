@@ -1,0 +1,91 @@
+{
+  "analysis_summary": {
+    "total_features": 317,
+    "top_features_selected": 40,
+    "model_accuracy": 0.9448746056855291,
+    "dataset_shape": [
+      540494,
+      319
+    ],
+    "class_distribution": {
+      "Benign": 349178,
+      "Attack": 170436,
+      "Suspicious": 20880
+    }
+  },
+  "model_performance": {
+    "Attack": {
+      "precision": 0.9767121973065481,
+      "recall": 0.8957373778859976,
+      "f1-score": 0.934473893615719,
+      "support": 34087.0
+    },
+    "Benign": {
+      "precision": 0.9893389880081895,
+      "recall": 0.968712411936537,
+      "f1-score": 0.9789170573594953,
+      "support": 69836.0
+    },
+    "Suspicious": {
+      "precision": 0.46772286592575074,
+      "recall": 0.9473180076628352,
+      "f1-score": 0.6262466360614216,
+      "support": 4176.0
+    },
+    "accuracy": 0.9448746056855291,
+    "macro avg": {
+      "precision": 0.8112580170801628,
+      "recall": 0.9372559324951233,
+      "f1-score": 0.8465458623455454,
+      "support": 108099.0
+    },
+    "weighted avg": {
+      "precision": 0.9652066802119738,
+      "recall": 0.9448746056855291,
+      "f1-score": 0.9512786351550822,
+      "support": 108099.0
+    }
+  },
+  "top_features": [
+    "fwd_packets_IAT_median",
+    "fwd_packets_IAT_max",
+    "fwd_packets_IAT_total",
+    "fwd_packets_IAT_min",
+    "fwd_packets_IAT_mode",
+    "mean_header_bytes",
+    "packets_IAT_mode",
+    "packet_IAT_min",
+    "fwd_packets_IAT_mean",
+    "packets_IAT_mean",
+    "mode_header_bytes",
+    "packet_IAT_total",
+    "fwd_mean_header_bytes",
+    "fwd_max_header_bytes",
+    "packet_IAT_max",
+    "fwd_mode_header_bytes",
+    "fwd_median_header_bytes",
+    "packets_IAT_median",
+    "median_header_bytes",
+    "min_header_bytes",
+    "max_header_bytes",
+    "fwd_min_header_bytes",
+    "fwd_total_header_bytes",
+    "bwd_packets_IAT_total",
+    "bwd_packets_IAT_min",
+    "src_port",
+    "bwd_packets_IAT_max",
+    "fwd_init_win_bytes",
+    "dst_port",
+    "total_header_bytes",
+    "median_packets_delta_time",
+    "mean_bwd_packets_delta_time",
+    "bwd_packets_IAT_median",
+    "max_bwd_packets_delta_time",
+    "duration",
+    "median_packets_delta_len",
+    "min_bwd_packets_delta_time",
+    "bwd_packets_IAT_mode",
+    "mean_packets_delta_time",
+    "bwd_packets_IAT_mean"
+  ]
+}
