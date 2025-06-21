@@ -15,16 +15,15 @@ A high-performance machine learning pipeline for DDoS traffic classification usi
 
 ### Feature Selection Methods
 
-The project includes four different feature selection approaches:
+The project includes three different feature selection approaches:
 
-1. **Information Gain** (`features/information_gain.json`) - 40 features → **94.40% accuracy**
-2. **Extra Trees** (`features/extra_tree.json`) - 40 features → **94.98% accuracy**
+1. **🏆 Extra Trees** (`features/extra_tree.json`) - 40 features → **94.98% accuracy** (BEST)
+2. **Information Gain** (`features/information_gain.json`) - 40 features → **94.40% accuracy**
 3. **ANOVA F-test** (`features/anova.json`) - 40 features → **85.29% accuracy**
-4. **🏆 RF-Selected** (auto-generated) - 40 features → **97.02% accuracy** (BEST)
 
 ### Key Capabilities
 
-- ✅ **High Performance**: Best model achieves 97.02% accuracy on 540k+ samples
+- ✅ **High Performance**: Best model achieves 94.98% accuracy on 540k+ samples
 - ✅ **Scalable Architecture**: Object-oriented design for easy extension
 - ✅ **Multiple Models**: Trained Random Forest models for each feature selection method
 - ✅ **Comprehensive Evaluation**: Detailed metrics, confusion matrices, and visualizations
@@ -74,13 +73,11 @@ cpacket-project/
 ├── results/               # Model performance results
 │   ├── results_anova.json
 │   ├── results_extra_tree.json
-│   ├── results_information_gain.json
-│   └── results_rf_selected.json  # Best performing model
+│   └── results_information_gain.json
 └── plots/                 # Generated visualizations
     ├── anova_results.png
     ├── extra_tree_results.png
-    ├── information_gain_results.png
-    └── rf_selected_results.png   # Best model plots
+    └── information_gain_results.png
 ```
 
 ## 🔧 Using the Classifier
@@ -112,9 +109,9 @@ classifier.train_all_methods(max_features=40)
 ```python
 import joblib
 
-# Load the best performing model (RF-selected features)
-model = joblib.load('saved_models/rf_classifier_rf_selected.joblib')
-encoder = joblib.load('saved_models/label_encoder_rf_selected.joblib')
+# Load the best performing model (Extra Trees features)
+model = joblib.load('saved_models/rf_classifier_extra_tree.joblib')
+encoder = joblib.load('saved_models/label_encoder_extra_tree.joblib')
 
 # Make predictions
 predictions = model.predict(new_data)
@@ -127,10 +124,9 @@ labels = encoder.inverse_transform(predictions)
 
 | Method           | Accuracy   | F1-Score (Macro) | Features | Status      |
 | ---------------- | ---------- | ---------------- | -------- | ----------- |
-| **RF-Selected**  | **97.02%** | **89.2%**        | 40       | 🏆 **Best** |
-| Extra Trees      | 94.98%     | 84.5%            | 40       | 🥈          |
-| Information Gain | 94.40%     | 83.2%            | 40       | 🥉          |
-| ANOVA F-test     | 85.29%     | 69.7%            | 40       |             |
+| **Extra Trees**  | **94.98%** | **84.5%**        | 40       | 🏆 **Best** |
+| Information Gain | 94.40%     | 83.2%            | 40       | �           |
+| ANOVA F-test     | 85.29%     | 69.7%            | 40       | 🥉          |
 
 ### Performance Details
 
@@ -165,27 +161,14 @@ classifier.train_all_methods(
 
 ## 📊 Best Features Identified
 
-The RF-Selected method identified these top 10 most important features:
-
-1. `fwd_packets_IAT_median` (4.17%)
-2. `fwd_packets_IAT_max` (4.01%)
-3. `fwd_packets_IAT_total` (4.00%)
-4. `fwd_packets_IAT_min` (3.60%)
-5. `fwd_packets_IAT_mode` (3.54%)
-6. `mean_header_bytes` (3.50%)
-7. `packets_IAT_mode` (3.29%)
-8. `packet_IAT_min` (3.23%)
-9. `fwd_packets_IAT_mean` (3.21%)
-10. `packets_IAT_mean` (3.04%)
-
-_Key insight: Forward packet Inter-Arrival Time (IAT) features are most discriminative for DDoS detection._
+The Extra Trees method identified the most important features for DDoS detection. Each feature selection method discovers different patterns in the data that are useful for classification.
 
 ## 📈 Expected Results
 
 With the current configuration:
 
 - **Training Time**: 2-5 minutes per method (depending on hardware)
-- **Best Accuracy**: 97.02% (RF-selected features)
+- **Best Accuracy**: 94.98% (Extra Trees features)
 - **Memory Usage**: 2-4GB during training
 - **Model Size**: 50-200MB per saved model
 
@@ -215,16 +198,16 @@ With the current configuration:
 
 The modular design allows easy integration of other classifiers (SVM, XGBoost, etc.) by extending the base class.
 
-## � Files Reference
+## 📁 Files Reference
 
 ### Key Files
 
 - **`classifier.py`**: Main training script
 - **`datasets/ddos.parquet`**: DDoS traffic dataset
 - **`features/*.json`**: Feature selection configurations
-- **`saved_models/rf_classifier_rf_selected.joblib`**: Best performing model
-- **`results/results_rf_selected.json`**: Best model performance metrics
-- **`plots/rf_selected_results.png`**: Best model visualizations
+- **`saved_models/rf_classifier_extra_tree.joblib`**: Best performing model
+- **`results/results_extra_tree.json`**: Best model performance metrics
+- **`plots/extra_tree_results.png`**: Best model visualizations
 
 ### Generated Results
 
@@ -236,7 +219,7 @@ All training runs automatically generate:
 
 ## 🎯 Key Achievements
 
-- ✅ **97.02% accuracy** on 540k+ sample DDoS dataset
+- ✅ **94.98% accuracy** on 540k+ sample DDoS dataset
 - ✅ **Automated feature selection** identifies optimal feature combinations
 - ✅ **Clean, organized structure** with separated models, results, and plots
 - ✅ **Production-ready models** saved and ready for deployment
