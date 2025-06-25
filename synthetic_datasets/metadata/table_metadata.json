@@ -1,0 +1,131 @@
+{
+    "columns": {
+        "total_header_bytes": {
+            "sdtype": "numerical"
+        },
+        "fwd_median_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "rst_flag_percentage_in_total": {
+            "sdtype": "numerical"
+        },
+        "packets_IAT_median": {
+            "sdtype": "numerical"
+        },
+        "max_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "fwd_mode_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "fwd_syn_flag_percentage_in_total": {
+            "sdtype": "categorical"
+        },
+        "packets_IAT_mode": {
+            "sdtype": "numerical"
+        },
+        "min_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "fwd_init_win_bytes": {
+            "sdtype": "numerical"
+        },
+        "bwd_rst_flag_percentage_in_total": {
+            "sdtype": "categorical"
+        },
+        "fwd_packets_IAT_mean": {
+            "sdtype": "numerical"
+        },
+        "mean_header_bytes": {
+            "sdtype": "numerical"
+        },
+        "bwd_init_win_bytes": {
+            "sdtype": "numerical"
+        },
+        "fwd_psh_flag_percentage_in_fwd_packets": {
+            "sdtype": "categorical"
+        },
+        "fwd_packets_IAT_max": {
+            "sdtype": "numerical"
+        },
+        "median_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "packets_rate": {
+            "sdtype": "numerical"
+        },
+        "fwd_syn_flag_percentage_in_fwd_packets": {
+            "sdtype": "categorical"
+        },
+        "fwd_packets_IAT_min": {
+            "sdtype": "numerical"
+        },
+        "mode_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "bwd_packets_rate": {
+            "sdtype": "numerical"
+        },
+        "bwd_psh_flag_percentage_in_bwd_packets": {
+            "sdtype": "categorical"
+        },
+        "fwd_packets_IAT_total": {
+            "sdtype": "numerical"
+        },
+        "fwd_total_header_bytes": {
+            "sdtype": "numerical"
+        },
+        "fwd_packets_rate": {
+            "sdtype": "numerical"
+        },
+        "packets_IAT_mean": {
+            "sdtype": "numerical"
+        },
+        "fwd_packets_IAT_median": {
+            "sdtype": "numerical"
+        },
+        "fwd_max_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "rst_flag_counts": {
+            "sdtype": "boolean"
+        },
+        "packet_IAT_max": {
+            "sdtype": "numerical"
+        },
+        "fwd_packets_IAT_mode": {
+            "sdtype": "numerical"
+        },
+        "fwd_min_header_bytes": {
+            "sdtype": "categorical"
+        },
+        "bwd_rst_flag_counts": {
+            "sdtype": "boolean"
+        },
+        "packet_IAT_min": {
+            "sdtype": "numerical"
+        },
+        "bwd_packets_IAT_total": {
+            "sdtype": "numerical"
+        },
+        "fwd_mean_header_bytes": {
+            "sdtype": "numerical"
+        },
+        "syn_flag_percentage_in_total": {
+            "sdtype": "categorical"
+        },
+        "packet_IAT_total": {
+            "sdtype": "numerical"
+        },
+        "bwd_packets_IAT_mode": {
+            "sdtype": "numerical"
+        },
+        "label": {
+            "sdtype": "categorical"
+        },
+        "activity": {
+            "sdtype": "categorical"
+        }
+    },
+    "METADATA_SPEC_VERSION": "SINGLE_TABLE_V1"
+}

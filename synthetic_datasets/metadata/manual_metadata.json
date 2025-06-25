@@ -1,0 +1,174 @@
+{
+  "columns": {
+    "total_header_bytes": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_median_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "rst_flag_percentage_in_total": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "packets_IAT_median": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "max_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "fwd_mode_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "fwd_syn_flag_percentage_in_total": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "packets_IAT_mode": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "min_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "fwd_init_win_bytes": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "bwd_rst_flag_percentage_in_total": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "fwd_packets_IAT_mean": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "mean_header_bytes": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "bwd_init_win_bytes": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_psh_flag_percentage_in_fwd_packets": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "fwd_packets_IAT_max": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "median_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "packets_rate": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_syn_flag_percentage_in_fwd_packets": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "fwd_packets_IAT_min": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "mode_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "bwd_packets_rate": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "bwd_psh_flag_percentage_in_bwd_packets": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "fwd_packets_IAT_total": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_total_header_bytes": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_packets_rate": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "packets_IAT_mean": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_packets_IAT_median": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_max_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "rst_flag_counts": {
+      "sdtype": "boolean",
+      "pii": false
+    },
+    "packet_IAT_max": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_packets_IAT_mode": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_min_header_bytes": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "bwd_rst_flag_counts": {
+      "sdtype": "boolean",
+      "pii": false
+    },
+    "packet_IAT_min": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "bwd_packets_IAT_total": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "fwd_mean_header_bytes": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "syn_flag_percentage_in_total": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "packet_IAT_total": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "bwd_packets_IAT_mode": {
+      "sdtype": "numerical",
+      "pii": false
+    },
+    "label": {
+      "sdtype": "categorical",
+      "pii": false
+    },
+    "activity": {
+      "sdtype": "categorical",
+      "pii": false
+    }
+  },
+  "primary_key": null,
+  "table_name": "network_traffic"
+}

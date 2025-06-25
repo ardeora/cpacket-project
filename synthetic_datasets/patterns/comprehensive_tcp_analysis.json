@@ -1,0 +1,2546 @@
+{
+  "tcp_flag_patterns": {
+    "cooccurrence": {
+      "rst_flag_percentage_in_total_vs_packets_IAT_median": {
+        "correlation": -0.13074042349553933,
+        "mutual_information": 0.8144192842405262,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 962858995.3021755
+      },
+      "rst_flag_percentage_in_total_vs_fwd_syn_flag_percentage_in_total": {
+        "correlation": -0.6718755636503277,
+        "mutual_information": 1.0086815797912356,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.4984839908190225
+      },
+      "rst_flag_percentage_in_total_vs_packets_IAT_mode": {
+        "correlation": -0.1307404233992779,
+        "mutual_information": 0.6920806915225768,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 962858995.2080562
+      },
+      "rst_flag_percentage_in_total_vs_bwd_rst_flag_percentage_in_total": {
+        "correlation": 0.4167593233974308,
+        "mutual_information": 0.8912680588681368,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.2222494811228534
+      },
+      "rst_flag_percentage_in_total_vs_fwd_packets_IAT_mean": {
+        "correlation": -0.0571881742272982,
+        "mutual_information": 0.17490453983031706,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 1538774738.574954
+      },
+      "rst_flag_percentage_in_total_vs_fwd_psh_flag_percentage_in_fwd_packets": {
+        "correlation": -0.06701988338270821,
+        "mutual_information": 0.023463362032206447,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.0020758634081902245
+      },
+      "rst_flag_percentage_in_total_vs_fwd_packets_IAT_max": {
+        "correlation": -0.05718817443675272,
+        "mutual_information": 0.17978140559593347,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 1538774738.6671958
+      },
+      "rst_flag_percentage_in_total_vs_packets_rate": {
+        "correlation": 0.1950902688908491,
+        "mutual_information": 0.777427896814459,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 6721.539525152457
+      },
+      "rst_flag_percentage_in_total_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": -0.49775100410733225,
+        "mutual_information": 0.3998043265398534,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.7065169529194187
+      },
+      "rst_flag_percentage_in_total_vs_fwd_packets_IAT_min": {
+        "correlation": -0.05718817408878254,
+        "mutual_information": 0.17751902888879156,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 1538774738.512862
+      },
+      "rst_flag_percentage_in_total_vs_bwd_packets_rate": {
+        "correlation": 0.19944529958970272,
+        "mutual_information": 0.7449494775033676,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 3332.6743432160397
+      },
+      "rst_flag_percentage_in_total_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.063289384858997,
+        "mutual_information": 0.02216183790400983,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "rst_flag_percentage_in_total_vs_fwd_packets_IAT_total": {
+        "correlation": -0.057188174914484406,
+        "mutual_information": 0.18471522936810914,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 1538774738.8735306
+      },
+      "rst_flag_percentage_in_total_vs_fwd_packets_rate": {
+        "correlation": 0.1633018356226984,
+        "mutual_information": 0.7636258070584301,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 3388.8651719186687
+      },
+      "rst_flag_percentage_in_total_vs_packets_IAT_mean": {
+        "correlation": -0.1307404235677109,
+        "mutual_information": 0.8398746198537363,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 962858995.3653584
+      },
+      "rst_flag_percentage_in_total_vs_fwd_packets_IAT_median": {
+        "correlation": -0.057188174150572826,
+        "mutual_information": 0.17547300410529232,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 1538774738.542354
+      },
+      "rst_flag_percentage_in_total_vs_rst_flag_counts": {
+        "correlation": 0.8333017275660621,
+        "mutual_information": 0.695079208287761,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.5957727873183619
+      },
+      "rst_flag_percentage_in_total_vs_packet_IAT_max": {
+        "correlation": -0.13074042389843676,
+        "mutual_information": 0.824755881212198,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 962858995.6584482
+      },
+      "rst_flag_percentage_in_total_vs_fwd_packets_IAT_mode": {
+        "correlation": -0.05718817408878352,
+        "mutual_information": 0.17751902888879156,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 1538774738.5128624
+      },
+      "rst_flag_percentage_in_total_vs_bwd_rst_flag_counts": {
+        "correlation": 0.30835946794375896,
+        "mutual_information": 0.5989628055385006,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.4385733157199472
+      },
+      "rst_flag_percentage_in_total_vs_packet_IAT_min": {
+        "correlation": -0.13074042339927802,
+        "mutual_information": 0.6922060095013043,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 962858995.2080549
+      },
+      "rst_flag_percentage_in_total_vs_bwd_packets_IAT_total": {
+        "correlation": 0.3534484829056611,
+        "mutual_information": 0.6589065653693331,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 681650227.9415995
+      },
+      "rst_flag_percentage_in_total_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.7148412598085055,
+        "mutual_information": 1.0015479166959111,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 0.5254387622721267
+      },
+      "rst_flag_percentage_in_total_vs_packet_IAT_total": {
+        "correlation": -0.13074042466989375,
+        "mutual_information": 0.834805378147633,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 962858996.3644161
+      },
+      "rst_flag_percentage_in_total_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.35344848353227765,
+        "mutual_information": 0.6536328637768456,
+        "flag1_mean": 0.3768069447952444,
+        "flag2_mean": 681650226.8668655
+      },
+      "packets_IAT_median_vs_fwd_syn_flag_percentage_in_total": {
+        "correlation": 0.09287121195118905,
+        "mutual_information": 0.7845150895221029,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.4984839908190225
+      },
+      "packets_IAT_median_vs_packets_IAT_mode": {
+        "correlation": 1.0,
+        "mutual_information": 2.2227477784562786,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 962858995.2080562
+      },
+      "packets_IAT_median_vs_bwd_rst_flag_percentage_in_total": {
+        "correlation": -0.6517359887607503,
+        "mutual_information": 0.7200501095688114,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.2222494811228534
+      },
+      "packets_IAT_median_vs_fwd_packets_IAT_mean": {
+        "correlation": 0.11080333388884024,
+        "mutual_information": 1.5467834040014887,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 1538774738.574954
+      },
+      "packets_IAT_median_vs_fwd_psh_flag_percentage_in_fwd_packets": {
+        "correlation": -0.07556101161557187,
+        "mutual_information": 0.02870764639991119,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.0020758634081902245
+      },
+      "packets_IAT_median_vs_fwd_packets_IAT_max": {
+        "correlation": 0.11080333374178905,
+        "mutual_information": 1.5406376985443533,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 1538774738.6671958
+      },
+      "packets_IAT_median_vs_packets_rate": {
+        "correlation": -0.7016129858269597,
+        "mutual_information": 0.68837618648553,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 6721.539525152457
+      },
+      "packets_IAT_median_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": -0.4428106754282143,
+        "mutual_information": 0.20998730830195722,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.7065169529194187
+      },
+      "packets_IAT_median_vs_fwd_packets_IAT_min": {
+        "correlation": 0.11080333398782773,
+        "mutual_information": 1.5459209164842407,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 1538774738.512862
+      },
+      "packets_IAT_median_vs_bwd_packets_rate": {
+        "correlation": -0.7442561492499434,
+        "mutual_information": 0.6632094416279317,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 3332.6743432160397
+      },
+      "packets_IAT_median_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.07135509199811094,
+        "mutual_information": 0.02663368218943596,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "packets_IAT_median_vs_fwd_packets_IAT_total": {
+        "correlation": 0.1108033334128496,
+        "mutual_information": 1.5452682429967308,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 1538774738.8735306
+      },
+      "packets_IAT_median_vs_fwd_packets_rate": {
+        "correlation": -0.567073813418477,
+        "mutual_information": 0.6927090376273024,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 3388.8651719186687
+      },
+      "packets_IAT_median_vs_packets_IAT_mean": {
+        "correlation": 1.0,
+        "mutual_information": 2.3831435045653047,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 962858995.3653584
+      },
+      "packets_IAT_median_vs_fwd_packets_IAT_median": {
+        "correlation": 0.11080333394081181,
+        "mutual_information": 1.5432942491386616,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 1538774738.542354
+      },
+      "packets_IAT_median_vs_rst_flag_counts": {
+        "correlation": -0.60814793834738,
+        "mutual_information": 0.2855312551489142,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.5957727873183619
+      },
+      "packets_IAT_median_vs_packet_IAT_max": {
+        "correlation": 1.0,
+        "mutual_information": 2.3586397182296324,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 962858995.6584482
+      },
+      "packets_IAT_median_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.11080333398782682,
+        "mutual_information": 1.5459209164842407,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 1538774738.5128624
+      },
+      "packets_IAT_median_vs_bwd_rst_flag_counts": {
+        "correlation": -0.8630854141118242,
+        "mutual_information": 0.4602243691833596,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.4385733157199472
+      },
+      "packets_IAT_median_vs_packet_IAT_min": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.222814021448895,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 962858995.2080549
+      },
+      "packets_IAT_median_vs_bwd_packets_IAT_total": {
+        "correlation": -0.7740547202048367,
+        "mutual_information": 0.6667584146264112,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 681650227.9415995
+      },
+      "packets_IAT_median_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.014288579143999478,
+        "mutual_information": 0.7886365130676429,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 0.5254387622721267
+      },
+      "packets_IAT_median_vs_packet_IAT_total": {
+        "correlation": 0.9999999999999997,
+        "mutual_information": 2.351801617975782,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 962858996.3644161
+      },
+      "packets_IAT_median_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.7740547179212057,
+        "mutual_information": 0.6664423648274127,
+        "flag1_mean": 962858995.3021755,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_syn_flag_percentage_in_total_vs_packets_IAT_mode": {
+        "correlation": 0.09287121200395218,
+        "mutual_information": 0.6885973615580512,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 962858995.2080562
+      },
+      "fwd_syn_flag_percentage_in_total_vs_bwd_rst_flag_percentage_in_total": {
+        "correlation": -0.19370070329555533,
+        "mutual_information": 0.8399559827377514,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 0.2222494811228534
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_packets_IAT_mean": {
+        "correlation": 0.24364451633347328,
+        "mutual_information": 0.205355961311394,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 1538774738.574954
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_psh_flag_percentage_in_fwd_packets": {
+        "correlation": -0.0843198171680967,
+        "mutual_information": 0.04493564678244599,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 0.0020758634081902245
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_packets_IAT_max": {
+        "correlation": 0.2436445162976087,
+        "mutual_information": 0.210477718215214,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 1538774738.6671958
+      },
+      "fwd_syn_flag_percentage_in_total_vs_packets_rate": {
+        "correlation": -0.0452724625256073,
+        "mutual_information": 0.7685466817139779,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 6721.539525152457
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": 0.8179483160670773,
+        "mutual_information": 0.663690326932215,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 0.7065169529194187
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_packets_IAT_min": {
+        "correlation": 0.2436445163478185,
+        "mutual_information": 0.211394210628022,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 1538774738.512862
+      },
+      "fwd_syn_flag_percentage_in_total_vs_bwd_packets_rate": {
+        "correlation": -0.041449700030382806,
+        "mutual_information": 0.7714654384879722,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 3332.6743432160397
+      },
+      "fwd_syn_flag_percentage_in_total_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.07962635997914638,
+        "mutual_information": 0.04468015382265733,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_packets_IAT_total": {
+        "correlation": 0.24364451614367924,
+        "mutual_information": 0.21752380056967002,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 1538774738.8735306
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_packets_rate": {
+        "correlation": -0.041517325327643954,
+        "mutual_information": 0.7803042078053539,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 3388.8651719186687
+      },
+      "fwd_syn_flag_percentage_in_total_vs_packets_IAT_mean": {
+        "correlation": 0.09287121189291318,
+        "mutual_information": 0.8277150661216792,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_packets_IAT_median": {
+        "correlation": 0.243644516362346,
+        "mutual_information": 0.2108945919821159,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_syn_flag_percentage_in_total_vs_rst_flag_counts": {
+        "correlation": -0.5734959946631487,
+        "mutual_information": 0.5018164186050953,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_syn_flag_percentage_in_total_vs_packet_IAT_max": {
+        "correlation": 0.09287121164619366,
+        "mutual_information": 0.8026493772462615,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_syn_flag_percentage_in_total_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.24364451634781892,
+        "mutual_information": 0.211394210628022,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_syn_flag_percentage_in_total_vs_bwd_rst_flag_counts": {
+        "correlation": -0.16735468540016255,
+        "mutual_information": 0.5741708848681766,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_syn_flag_percentage_in_total_vs_packet_IAT_min": {
+        "correlation": 0.09287121200395194,
+        "mutual_information": 0.6887763081794294,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_syn_flag_percentage_in_total_vs_bwd_packets_IAT_total": {
+        "correlation": -0.11157486167203938,
+        "mutual_information": 0.712474616144736,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_syn_flag_percentage_in_total_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.9476431607704554,
+        "mutual_information": 1.262813900061876,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_syn_flag_percentage_in_total_vs_packet_IAT_total": {
+        "correlation": 0.09287121105508474,
+        "mutual_information": 0.8179714368865643,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_syn_flag_percentage_in_total_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.11157486046245653,
+        "mutual_information": 0.7137977736061729,
+        "flag1_mean": 0.4984839908190225,
+        "flag2_mean": 681650226.8668655
+      },
+      "packets_IAT_mode_vs_bwd_rst_flag_percentage_in_total": {
+        "correlation": -0.6517359886332166,
+        "mutual_information": 0.5960186289930078,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 0.2222494811228534
+      },
+      "packets_IAT_mode_vs_fwd_packets_IAT_mean": {
+        "correlation": 0.11080333407014639,
+        "mutual_information": 1.4616752887949143,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 1538774738.574954
+      },
+      "packets_IAT_mode_vs_fwd_psh_flag_percentage_in_fwd_packets": {
+        "correlation": -0.07556101159894937,
+        "mutual_information": 0.01306983560306385,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 0.0020758634081902245
+      },
+      "packets_IAT_mode_vs_fwd_packets_IAT_max": {
+        "correlation": 0.11080333392309517,
+        "mutual_information": 1.4668791672055974,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 1538774738.6671958
+      },
+      "packets_IAT_mode_vs_packets_rate": {
+        "correlation": -0.7016129856691623,
+        "mutual_information": 0.6648375295353648,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 6721.539525152457
+      },
+      "packets_IAT_mode_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": -0.44281067544235764,
+        "mutual_information": 0.19917565272106774,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 0.7065169529194187
+      },
+      "packets_IAT_mode_vs_fwd_packets_IAT_min": {
+        "correlation": 0.11080333416913386,
+        "mutual_information": 1.472459054570332,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 1538774738.512862
+      },
+      "packets_IAT_mode_vs_bwd_packets_rate": {
+        "correlation": -0.7442561490825571,
+        "mutual_information": 0.6354971372212161,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 3332.6743432160397
+      },
+      "packets_IAT_mode_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.07135509198236875,
+        "mutual_information": 0.012832965505404026,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "packets_IAT_mode_vs_fwd_packets_IAT_total": {
+        "correlation": 0.11080333359415573,
+        "mutual_information": 1.4635647742893076,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 1538774738.8735306
+      },
+      "packets_IAT_mode_vs_fwd_packets_rate": {
+        "correlation": -0.5670738132909372,
+        "mutual_information": 0.6429717798441175,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 3388.8651719186687
+      },
+      "packets_IAT_mode_vs_packets_IAT_mean": {
+        "correlation": 0.9999999999999997,
+        "mutual_information": 2.2189323434775767,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 962858995.3653584
+      },
+      "packets_IAT_mode_vs_fwd_packets_IAT_median": {
+        "correlation": 0.11080333412211796,
+        "mutual_information": 1.4577705349427146,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 1538774738.542354
+      },
+      "packets_IAT_mode_vs_rst_flag_counts": {
+        "correlation": -0.6081479383279119,
+        "mutual_information": 0.2849891015153805,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 0.5957727873183619
+      },
+      "packets_IAT_mode_vs_packet_IAT_max": {
+        "correlation": 1.0,
+        "mutual_information": 2.214110715885823,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 962858995.6584482
+      },
+      "packets_IAT_mode_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.11080333416913297,
+        "mutual_information": 1.472459054570332,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 1538774738.5128624
+      },
+      "packets_IAT_mode_vs_bwd_rst_flag_counts": {
+        "correlation": -0.8630854140945474,
+        "mutual_information": 0.4695058157290104,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 0.4385733157199472
+      },
+      "packets_IAT_mode_vs_packet_IAT_min": {
+        "correlation": 1.0,
+        "mutual_information": 2.2382180692414035,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 962858995.2080549
+      },
+      "packets_IAT_mode_vs_bwd_packets_IAT_total": {
+        "correlation": -0.7740547200154144,
+        "mutual_information": 0.5459182155200737,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 681650227.9415995
+      },
+      "packets_IAT_mode_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.014288579041097503,
+        "mutual_information": 0.6511718393926236,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 0.5254387622721267
+      },
+      "packets_IAT_mode_vs_packet_IAT_total": {
+        "correlation": 1.0,
+        "mutual_information": 2.2124043891803975,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 962858996.3644161
+      },
+      "packets_IAT_mode_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.774054717731784,
+        "mutual_information": 0.5350011080684629,
+        "flag1_mean": 962858995.2080562,
+        "flag2_mean": 681650226.8668655
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_packets_IAT_mean": {
+        "correlation": -0.24167302892036968,
+        "mutual_information": 0.23528129973801049,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 1538774738.574954
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_psh_flag_percentage_in_fwd_packets": {
+        "correlation": -0.05285836630093865,
+        "mutual_information": 0.023777192527945523,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 0.0020758634081902245
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_packets_IAT_max": {
+        "correlation": -0.24167302919506603,
+        "mutual_information": 0.23922345127556,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 1538774738.6671958
+      },
+      "bwd_rst_flag_percentage_in_total_vs_packets_rate": {
+        "correlation": 0.5732913903715987,
+        "mutual_information": 0.7593699272903058,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 6721.539525152457
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": 0.19673040431713934,
+        "mutual_information": 0.2167999754781409,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 0.7065169529194187
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_packets_IAT_min": {
+        "correlation": -0.24167302873758187,
+        "mutual_information": 0.24017729417782796,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 1538774738.512862
+      },
+      "bwd_rst_flag_percentage_in_total_vs_bwd_packets_rate": {
+        "correlation": 0.6287570430867981,
+        "mutual_information": 0.7407154572320609,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 3332.6743432160397
+      },
+      "bwd_rst_flag_percentage_in_total_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.04991613412298303,
+        "mutual_information": 0.02354134524373297,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_packets_IAT_total": {
+        "correlation": -0.24167302981374686,
+        "mutual_information": 0.2435915104377755,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 1538774738.8735306
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_packets_rate": {
+        "correlation": 0.4479069245843399,
+        "mutual_information": 0.7507895846302541,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 3388.8651719186687
+      },
+      "bwd_rst_flag_percentage_in_total_vs_packets_IAT_mean": {
+        "correlation": -0.6517359888578749,
+        "mutual_information": 0.7850959297727371,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 962858995.3653584
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_packets_IAT_median": {
+        "correlation": -0.2416730288209638,
+        "mutual_information": 0.23530866582716659,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 1538774738.542354
+      },
+      "bwd_rst_flag_percentage_in_total_vs_rst_flag_counts": {
+        "correlation": 0.6572223903071792,
+        "mutual_information": 0.35923121539085967,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 0.5957727873183619
+      },
+      "bwd_rst_flag_percentage_in_total_vs_packet_IAT_max": {
+        "correlation": -0.6517359892992275,
+        "mutual_information": 0.7660684659964607,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 962858995.6584482
+      },
+      "bwd_rst_flag_percentage_in_total_vs_fwd_packets_IAT_mode": {
+        "correlation": -0.24167302873758326,
+        "mutual_information": 0.2401738269758269,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 1538774738.5128624
+      },
+      "bwd_rst_flag_percentage_in_total_vs_bwd_rst_flag_counts": {
+        "correlation": 0.9027454984017212,
+        "mutual_information": 0.7095697854141729,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 0.4385733157199472
+      },
+      "bwd_rst_flag_percentage_in_total_vs_packet_IAT_min": {
+        "correlation": -0.6517359886332168,
+        "mutual_information": 0.6269401995581809,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 962858995.2080549
+      },
+      "bwd_rst_flag_percentage_in_total_vs_bwd_packets_IAT_total": {
+        "correlation": 0.9210793811897171,
+        "mutual_information": 0.7503429041608363,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 681650227.9415995
+      },
+      "bwd_rst_flag_percentage_in_total_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.21879223013070936,
+        "mutual_information": 0.8193123028421394,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 0.5254387622721267
+      },
+      "bwd_rst_flag_percentage_in_total_vs_packet_IAT_total": {
+        "correlation": -0.6517359903217088,
+        "mutual_information": 0.7749068242072372,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 962858996.3644161
+      },
+      "bwd_rst_flag_percentage_in_total_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.9210793808410193,
+        "mutual_information": 0.7460670528651034,
+        "flag1_mean": 0.2222494811228534,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_packets_IAT_mean_vs_fwd_psh_flag_percentage_in_fwd_packets": {
+        "correlation": -0.20278715721320353,
+        "mutual_information": 0.03886267450518055,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 0.0020758634081902245
+      },
+      "fwd_packets_IAT_mean_vs_fwd_packets_IAT_max": {
+        "correlation": 1.0,
+        "mutual_information": 2.866938490349832,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 1538774738.6671958
+      },
+      "fwd_packets_IAT_mean_vs_packets_rate": {
+        "correlation": 0.11404382496079236,
+        "mutual_information": 0.16997585004389748,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 6721.539525152457
+      },
+      "fwd_packets_IAT_mean_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": 0.20459655058003862,
+        "mutual_information": 0.1798356401812926,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 0.7065169529194187
+      },
+      "fwd_packets_IAT_mean_vs_fwd_packets_IAT_min": {
+        "correlation": 1.0,
+        "mutual_information": 2.856159063510812,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 1538774738.512862
+      },
+      "fwd_packets_IAT_mean_vs_bwd_packets_rate": {
+        "correlation": 0.14418449619684864,
+        "mutual_information": 0.11990166038617467,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 3332.6743432160397
+      },
+      "fwd_packets_IAT_mean_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.1914995044550423,
+        "mutual_information": 0.03751418801981199,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "fwd_packets_IAT_mean_vs_fwd_packets_IAT_total": {
+        "correlation": 1.0,
+        "mutual_information": 2.861510317811478,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 1538774738.8735306
+      },
+      "fwd_packets_IAT_mean_vs_fwd_packets_rate": {
+        "correlation": 0.07478445131982608,
+        "mutual_information": 0.19558299108067834,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 3388.8651719186687
+      },
+      "fwd_packets_IAT_mean_vs_packets_IAT_mean": {
+        "correlation": 0.1108033337020018,
+        "mutual_information": 1.6036533219981446,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_packets_IAT_mean_vs_fwd_packets_IAT_median": {
+        "correlation": 1.0,
+        "mutual_information": 2.8895977271960493,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_packets_IAT_mean_vs_rst_flag_counts": {
+        "correlation": -0.10494917011261286,
+        "mutual_information": 0.04004258019468043,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_packets_IAT_mean_vs_packet_IAT_max": {
+        "correlation": 0.11080333293410968,
+        "mutual_information": 1.5978078205527089,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_packets_IAT_mean_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.856159063510812,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_packets_IAT_mean_vs_bwd_rst_flag_counts": {
+        "correlation": -0.1802304705078341,
+        "mutual_information": 0.06758570993306012,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_packets_IAT_mean_vs_packet_IAT_min": {
+        "correlation": 0.11080333407014589,
+        "mutual_information": 1.499114374217711,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_packets_IAT_mean_vs_bwd_packets_IAT_total": {
+        "correlation": -0.025398617966140655,
+        "mutual_information": 1.1301020777203608,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_packets_IAT_mean_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.10743253811628696,
+        "mutual_information": 0.2358460774718072,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_packets_IAT_mean_vs_packet_IAT_total": {
+        "correlation": 0.11080333111317586,
+        "mutual_information": 1.5899146185740456,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_packets_IAT_mean_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.025398615018734205,
+        "mutual_information": 1.1086861982356133,
+        "flag1_mean": 1538774738.574954,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_max": {
+        "correlation": -0.2027871550797561,
+        "mutual_information": 0.025388096589478604,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 1538774738.6671958
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_packets_rate": {
+        "correlation": -0.040623642664607267,
+        "mutual_information": 0.0,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 6721.539525152457
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": -0.10316322560026257,
+        "mutual_information": 0.058918955212547974,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 0.7065169529194187
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_min": {
+        "correlation": -0.20278715826320648,
+        "mutual_information": 0.027687265389467086,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 1538774738.512862
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_bwd_packets_rate": {
+        "correlation": -0.043125677951983576,
+        "mutual_information": 0.0,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 3332.6743432160397
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": 0.9604133903271418,
+        "mutual_information": 0.04346499560309658,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_total": {
+        "correlation": -0.20278715207445322,
+        "mutual_information": 0.0250377568447,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 1538774738.8735306
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_fwd_packets_rate": {
+        "correlation": -0.032809063903306436,
+        "mutual_information": 0.0,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 3388.8651719186687
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_packets_IAT_mean": {
+        "correlation": -0.07556101123603319,
+        "mutual_information": 0.03739497360934241,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_median": {
+        "correlation": -0.20278715821706905,
+        "mutual_information": 0.02210711262263576,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_rst_flag_counts": {
+        "correlation": -0.08042691040430501,
+        "mutual_information": 0.021175773499817474,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_packet_IAT_max": {
+        "correlation": -0.075561009659073,
+        "mutual_information": 0.03480467129424447,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_mode": {
+        "correlation": -0.2027871582632071,
+        "mutual_information": 0.027677634592762068,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_bwd_rst_flag_counts": {
+        "correlation": -0.05855289934374918,
+        "mutual_information": 0.022046148005915978,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_packet_IAT_min": {
+        "correlation": -0.07556101159894923,
+        "mutual_information": 0.027491008529120453,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_bwd_packets_IAT_total": {
+        "correlation": -0.054121170994596464,
+        "mutual_information": 0.0015801716210224193,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.08836217619488872,
+        "mutual_information": 0.03573389654281289,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_packet_IAT_total": {
+        "correlation": -0.07556100782847536,
+        "mutual_information": 0.03001460695971314,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.05412117484981104,
+        "mutual_information": 0.00012860095536337823,
+        "flag1_mean": 0.0020758634081902245,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_packets_IAT_max_vs_packets_rate": {
+        "correlation": 0.1140438249119828,
+        "mutual_information": 0.17236356919607232,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 6721.539525152457
+      },
+      "fwd_packets_IAT_max_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": 0.20459655048934694,
+        "mutual_information": 0.17848804154417675,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 0.7065169529194187
+      },
+      "fwd_packets_IAT_max_vs_fwd_packets_IAT_min": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.850338050099598,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 1538774738.512862
+      },
+      "fwd_packets_IAT_max_vs_bwd_packets_rate": {
+        "correlation": 0.14418449615810605,
+        "mutual_information": 0.12378464625765773,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 3332.6743432160397
+      },
+      "fwd_packets_IAT_max_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.19149950291817405,
+        "mutual_information": 0.03771508356877806,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "fwd_packets_IAT_max_vs_fwd_packets_IAT_total": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.8795493943963635,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 1538774738.8735306
+      },
+      "fwd_packets_IAT_max_vs_fwd_packets_rate": {
+        "correlation": 0.07478445127061,
+        "mutual_information": 0.19781898290736866,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 3388.8651719186687
+      },
+      "fwd_packets_IAT_max_vs_packets_IAT_mean": {
+        "correlation": 0.1108033335549506,
+        "mutual_information": 1.5889490775033916,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_packets_IAT_max_vs_fwd_packets_IAT_median": {
+        "correlation": 1.0,
+        "mutual_information": 2.8679005407914304,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_packets_IAT_max_vs_rst_flag_counts": {
+        "correlation": -0.10494917034741684,
+        "mutual_information": 0.0477839049876172,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_packets_IAT_max_vs_packet_IAT_max": {
+        "correlation": 0.11080333278705848,
+        "mutual_information": 1.6033455412955817,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_packets_IAT_max_vs_fwd_packets_IAT_mode": {
+        "correlation": 1.0,
+        "mutual_information": 2.850338050099598,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_packets_IAT_max_vs_bwd_rst_flag_counts": {
+        "correlation": -0.1802304707330323,
+        "mutual_information": 0.0712271463410099,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_packets_IAT_max_vs_packet_IAT_min": {
+        "correlation": 0.1108033339230947,
+        "mutual_information": 1.501290053247624,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_packets_IAT_max_vs_bwd_packets_IAT_total": {
+        "correlation": -0.025398618122025533,
+        "mutual_information": 1.1325666351695487,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_packets_IAT_max_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.10743253802075377,
+        "mutual_information": 0.23924253692836484,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_packets_IAT_max_vs_packet_IAT_total": {
+        "correlation": 0.11080333096612466,
+        "mutual_information": 1.6027178963729347,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_packets_IAT_max_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.0253986151746191,
+        "mutual_information": 1.1128949585576935,
+        "flag1_mean": 1538774738.6671958,
+        "flag2_mean": 681650226.8668655
+      },
+      "packets_rate_vs_fwd_syn_flag_percentage_in_fwd_packets": {
+        "correlation": 0.3156179560613416,
+        "mutual_information": 0.1821050489656768,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 0.7065169529194187
+      },
+      "packets_rate_vs_fwd_packets_IAT_min": {
+        "correlation": 0.11404382499364876,
+        "mutual_information": 0.1899220428179187,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 1538774738.512862
+      },
+      "packets_rate_vs_bwd_packets_rate": {
+        "correlation": 0.8871737123033958,
+        "mutual_information": 2.3426574629603856,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 3332.6743432160397
+      },
+      "packets_rate_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.038311127301609176,
+        "mutual_information": 0.0,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "packets_rate_vs_fwd_packets_IAT_total": {
+        "correlation": 0.11404382480278928,
+        "mutual_information": 0.19530886240464085,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 1538774738.8735306
+      },
+      "packets_rate_vs_fwd_packets_rate": {
+        "correlation": 0.9383253045481713,
+        "mutual_information": 2.3770822794666153,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 3388.8651719186687
+      },
+      "packets_rate_vs_packets_IAT_mean": {
+        "correlation": -0.7016129859328908,
+        "mutual_information": 0.7167074629011019,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 962858995.3653584
+      },
+      "packets_rate_vs_fwd_packets_IAT_median": {
+        "correlation": 0.1140438249780442,
+        "mutual_information": 0.1909544491635944,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 1538774738.542354
+      },
+      "packets_rate_vs_rst_flag_counts": {
+        "correlation": 0.4970217909752754,
+        "mutual_information": 0.2615850005421425,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 0.5957727873183619
+      },
+      "packets_rate_vs_packet_IAT_max": {
+        "correlation": -0.701612986424281,
+        "mutual_information": 0.735263215892795,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 962858995.6584482
+      },
+      "packets_rate_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.11404382499364796,
+        "mutual_information": 0.1899220428179187,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 1538774738.5128624
+      },
+      "packets_rate_vs_bwd_rst_flag_counts": {
+        "correlation": 0.6539681700805964,
+        "mutual_information": 0.4963689037150809,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 0.4385733157199472
+      },
+      "packets_rate_vs_packet_IAT_min": {
+        "correlation": -0.7016129856691639,
+        "mutual_information": 0.6800323148674869,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 962858995.2080549
+      },
+      "packets_rate_vs_bwd_packets_IAT_total": {
+        "correlation": 0.6916390698381039,
+        "mutual_information": 0.6008814064295231,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 681650227.9415995
+      },
+      "packets_rate_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.08706427248766184,
+        "mutual_information": 0.7454628364343252,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 0.5254387622721267
+      },
+      "packets_rate_vs_packet_IAT_total": {
+        "correlation": -0.7016129876078971,
+        "mutual_information": 0.7637505978113146,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 962858996.3644161
+      },
+      "packets_rate_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.6916390699026068,
+        "mutual_information": 0.5330506332374894,
+        "flag1_mean": 6721.539525152457,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_min": {
+        "correlation": 0.20459655062475088,
+        "mutual_information": 0.1659209980383327,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 1538774738.512862
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_bwd_packets_rate": {
+        "correlation": 0.3461672454938892,
+        "mutual_information": 0.19421933211228248,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 3332.6743432160397
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.09742089599032534,
+        "mutual_information": 0.04152474259628569,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_total": {
+        "correlation": 0.20459655020696452,
+        "mutual_information": 0.16365600703099847,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 1538774738.8735306
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_fwd_packets_rate": {
+        "correlation": 0.24657915612928286,
+        "mutual_information": 0.1835799861349834,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 3388.8651719186687
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_packets_IAT_mean": {
+        "correlation": -0.44281067548464803,
+        "mutual_information": 0.22551537780256403,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_median": {
+        "correlation": 0.20459655063468526,
+        "mutual_information": 0.16511318348518378,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_rst_flag_counts": {
+        "correlation": -0.12640888838254258,
+        "mutual_information": 0.029110949380016127,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_packet_IAT_max": {
+        "correlation": -0.44281067568311355,
+        "mutual_information": 0.22248263337828167,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.2045965506247519,
+        "mutual_information": 0.1659209980383327,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_bwd_rst_flag_counts": {
+        "correlation": 0.36439955563424303,
+        "mutual_information": 0.10045708125110808,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_packet_IAT_min": {
+        "correlation": -0.4428106754423578,
+        "mutual_information": 0.21624190298226065,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_bwd_packets_IAT_total": {
+        "correlation": 0.32739202828630115,
+        "mutual_information": 0.1229487659593782,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.8521121063331889,
+        "mutual_information": 0.6454064437524987,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_packet_IAT_total": {
+        "correlation": -0.4428106760440362,
+        "mutual_information": 0.22290850741851242,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.32739202788508864,
+        "mutual_information": 0.12422339401361082,
+        "flag1_mean": 0.7065169529194187,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_packets_IAT_min_vs_bwd_packets_rate": {
+        "correlation": 0.1441844962229277,
+        "mutual_information": 0.11956821044486476,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 3332.6743432160397
+      },
+      "fwd_packets_IAT_min_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.19149950516167788,
+        "mutual_information": 0.03545290671320078,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "fwd_packets_IAT_min_vs_fwd_packets_IAT_total": {
+        "correlation": 1.0,
+        "mutual_information": 2.8476621441360987,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 1538774738.8735306
+      },
+      "fwd_packets_IAT_min_vs_fwd_packets_rate": {
+        "correlation": 0.07478445135295662,
+        "mutual_information": 0.19276715075550355,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 3388.8651719186687
+      },
+      "fwd_packets_IAT_min_vs_packets_IAT_mean": {
+        "correlation": 0.11080333380098928,
+        "mutual_information": 1.5776153718722021,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_packets_IAT_min_vs_fwd_packets_IAT_median": {
+        "correlation": 1.0,
+        "mutual_information": 2.851150393596105,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_packets_IAT_min_vs_rst_flag_counts": {
+        "correlation": -0.10494916996811816,
+        "mutual_information": 0.04044804215939379,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_packets_IAT_min_vs_packet_IAT_max": {
+        "correlation": 0.11080333303309718,
+        "mutual_information": 1.5761365448477616,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_packets_IAT_min_vs_fwd_packets_IAT_mode": {
+        "correlation": 1.0,
+        "mutual_information": 2.8845389919219797,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_packets_IAT_min_vs_bwd_rst_flag_counts": {
+        "correlation": -0.18023047036698303,
+        "mutual_information": 0.06688770082922968,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_packets_IAT_min_vs_packet_IAT_min": {
+        "correlation": 0.11080333416913339,
+        "mutual_information": 1.5163002177200138,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_packets_IAT_min_vs_bwd_packets_IAT_total": {
+        "correlation": -0.025398617863914123,
+        "mutual_information": 1.13009716807161,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_packets_IAT_min_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.10743253816267737,
+        "mutual_information": 0.25016670417807507,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_packets_IAT_min_vs_packet_IAT_total": {
+        "correlation": 0.11080333121216333,
+        "mutual_information": 1.5826641661418765,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_packets_IAT_min_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.02539861491650768,
+        "mutual_information": 1.1142756044154503,
+        "flag1_mean": 1538774738.512862,
+        "flag2_mean": 681650226.8668655
+      },
+      "bwd_packets_rate_vs_bwd_psh_flag_percentage_in_bwd_packets": {
+        "correlation": -0.040684027054994014,
+        "mutual_information": 0.0,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 0.0024218406869220607
+      },
+      "bwd_packets_rate_vs_fwd_packets_IAT_total": {
+        "correlation": 0.14418449607143502,
+        "mutual_information": 0.14627564730795273,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 1538774738.8735306
+      },
+      "bwd_packets_rate_vs_fwd_packets_rate": {
+        "correlation": 0.6729144798621443,
+        "mutual_information": 2.2735172140784647,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 3388.8651719186687
+      },
+      "bwd_packets_rate_vs_packets_IAT_mean": {
+        "correlation": -0.7442561493623121,
+        "mutual_information": 0.6906991616723968,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 962858995.3653584
+      },
+      "bwd_packets_rate_vs_fwd_packets_IAT_median": {
+        "correlation": 0.14418449621054213,
+        "mutual_information": 0.14096479674311357,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 1538774738.542354
+      },
+      "bwd_packets_rate_vs_rst_flag_counts": {
+        "correlation": 0.5169385811467181,
+        "mutual_information": 0.26209393613671583,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 0.5957727873183619
+      },
+      "bwd_packets_rate_vs_packet_IAT_max": {
+        "correlation": -0.7442561498835653,
+        "mutual_information": 0.7121421549143414,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 962858995.6584482
+      },
+      "bwd_packets_rate_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.14418449622292745,
+        "mutual_information": 0.1444561431249265,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 1538774738.5128624
+      },
+      "bwd_packets_rate_vs_bwd_rst_flag_counts": {
+        "correlation": 0.7179545330369556,
+        "mutual_information": 0.5052833883733623,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 0.4385733157199472
+      },
+      "bwd_packets_rate_vs_packet_IAT_min": {
+        "correlation": -0.7442561490825588,
+        "mutual_information": 0.646463713362639,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 962858995.2080549
+      },
+      "bwd_packets_rate_vs_bwd_packets_IAT_total": {
+        "correlation": 0.7443290577969925,
+        "mutual_information": 0.6458638836303434,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 681650227.9415995
+      },
+      "bwd_packets_rate_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.08582861311633941,
+        "mutual_information": 0.7500337760538138,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 0.5254387622721267
+      },
+      "bwd_packets_rate_vs_packet_IAT_total": {
+        "correlation": -0.7442561511391097,
+        "mutual_information": 0.7458877451421841,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 962858996.3644161
+      },
+      "bwd_packets_rate_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.7443290578541888,
+        "mutual_information": 0.5518502681549071,
+        "flag1_mean": 3332.6743432160397,
+        "flag2_mean": 681650226.8668655
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_fwd_packets_IAT_total": {
+        "correlation": -0.1914995013623453,
+        "mutual_information": 0.023056858832941618,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 1538774738.8735306
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_fwd_packets_rate": {
+        "correlation": -0.030931435237951235,
+        "mutual_information": 0.0,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 3388.8651719186687
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_packets_IAT_mean": {
+        "correlation": -0.07135509173706425,
+        "mutual_information": 0.03673492093733177,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 962858995.3653584
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_fwd_packets_IAT_median": {
+        "correlation": -0.19149950519760808,
+        "mutual_information": 0.021068150205714842,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 1538774738.542354
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_rst_flag_counts": {
+        "correlation": -0.07595014238582577,
+        "mutual_information": 0.020202664843957496,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 0.5957727873183619
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_packet_IAT_max": {
+        "correlation": -0.07135509060460604,
+        "mutual_information": 0.033541881375191096,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 962858995.6584482
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_fwd_packets_IAT_mode": {
+        "correlation": -0.19149950516167813,
+        "mutual_information": 0.025568404389991972,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 1538774738.5128624
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_bwd_rst_flag_counts": {
+        "correlation": -0.05529369485791707,
+        "mutual_information": 0.021740351515883383,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 0.4385733157199472
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_packet_IAT_min": {
+        "correlation": -0.07135509198236882,
+        "mutual_information": 0.02616493331583225,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 962858995.2080549
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_bwd_packets_IAT_total": {
+        "correlation": -0.05110864910284176,
+        "mutual_information": 0.0,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 681650227.9415995
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.08344371093936741,
+        "mutual_information": 0.03424955389588513,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 0.5254387622721267
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_packet_IAT_total": {
+        "correlation": -0.07135508963952804,
+        "mutual_information": 0.028494972990862344,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 962858996.3644161
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.051108651535167464,
+        "mutual_information": 0.0,
+        "flag1_mean": 0.0024218406869220607,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_packets_IAT_total_vs_fwd_packets_rate": {
+        "correlation": 0.07478445116050626,
+        "mutual_information": 0.19968344044016328,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 3388.8651719186687
+      },
+      "fwd_packets_IAT_total_vs_packets_IAT_mean": {
+        "correlation": 0.11080333322601113,
+        "mutual_information": 1.6027494423176796,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_packets_IAT_total_vs_fwd_packets_IAT_median": {
+        "correlation": 1.0,
+        "mutual_information": 2.8612835142988366,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_packets_IAT_total_vs_rst_flag_counts": {
+        "correlation": -0.10494917091221466,
+        "mutual_information": 0.050995900462593724,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_packets_IAT_total_vs_packet_IAT_max": {
+        "correlation": 0.11080333245811906,
+        "mutual_information": 1.6202954028647611,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_packets_IAT_total_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.8480094443749073,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_packets_IAT_total_vs_bwd_rst_flag_counts": {
+        "correlation": -0.18023047125773514,
+        "mutual_information": 0.07265071855723626,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_packets_IAT_total_vs_packet_IAT_min": {
+        "correlation": 0.11080333359415526,
+        "mutual_information": 1.5073759629810435,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_packets_IAT_total_vs_bwd_packets_IAT_total": {
+        "correlation": -0.025398618489128673,
+        "mutual_information": 1.1283405362569994,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_packets_IAT_total_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.10743253771434662,
+        "mutual_information": 0.24580187108120732,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_packets_IAT_total_vs_packet_IAT_total": {
+        "correlation": 0.11080333063718527,
+        "mutual_information": 1.6196910983473742,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_packets_IAT_total_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.025398615541722295,
+        "mutual_information": 1.1110359987529232,
+        "flag1_mean": 1538774738.8735306,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_packets_rate_vs_packets_IAT_mean": {
+        "correlation": -0.5670738135040955,
+        "mutual_information": 0.724260917215537,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 962858995.3653584
+      },
+      "fwd_packets_rate_vs_fwd_packets_IAT_median": {
+        "correlation": 0.07478445133722167,
+        "mutual_information": 0.2166533081341968,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 1538774738.542354
+      },
+      "fwd_packets_rate_vs_rst_flag_counts": {
+        "correlation": 0.4094258814741656,
+        "mutual_information": 0.2662958729348093,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_packets_rate_vs_packet_IAT_max": {
+        "correlation": -0.5670738139012602,
+        "mutual_information": 0.7481404061825678,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_packets_rate_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.07478445135295556,
+        "mutual_information": 0.2162107269016289,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_packets_rate_vs_bwd_rst_flag_counts": {
+        "correlation": 0.5104029450875144,
+        "mutual_information": 0.5042221452634648,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_packets_rate_vs_packet_IAT_min": {
+        "correlation": -0.5670738132909382,
+        "mutual_information": 0.6559932228151415,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_packets_rate_vs_bwd_packets_IAT_total": {
+        "correlation": 0.5510301526471499,
+        "mutual_information": 0.6519953524716504,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_packets_rate_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.07526001111799416,
+        "mutual_information": 0.7601271537002208,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_packets_rate_vs_packet_IAT_total": {
+        "correlation": -0.5670738148579177,
+        "mutual_information": 0.751340173235151,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_packets_rate_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.5510301527076967,
+        "mutual_information": 0.5806939178625603,
+        "flag1_mean": 3388.8651719186687,
+        "flag2_mean": 681650226.8668655
+      },
+      "packets_IAT_mean_vs_fwd_packets_IAT_median": {
+        "correlation": 0.11080333375397337,
+        "mutual_information": 1.549647378122673,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 1538774738.542354
+      },
+      "packets_IAT_mean_vs_rst_flag_counts": {
+        "correlation": -0.6081479384046502,
+        "mutual_information": 0.30389029917443366,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 0.5957727873183619
+      },
+      "packets_IAT_mean_vs_packet_IAT_max": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.3768260636531098,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 962858995.6584482
+      },
+      "packets_IAT_mean_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.11080333380098836,
+        "mutual_information": 1.5363742976370531,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 1538774738.5128624
+      },
+      "packets_IAT_mean_vs_bwd_rst_flag_counts": {
+        "correlation": -0.86308541417031,
+        "mutual_information": 0.4821297937687943,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 0.4385733157199472
+      },
+      "packets_IAT_mean_vs_packet_IAT_min": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.2277829588301477,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 962858995.2080549
+      },
+      "packets_IAT_mean_vs_bwd_packets_IAT_total": {
+        "correlation": -0.7740547203287951,
+        "mutual_information": 0.679963183392331,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 681650227.9415995
+      },
+      "packets_IAT_mean_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.014288579145980513,
+        "mutual_information": 0.795621401845378,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 0.5254387622721267
+      },
+      "packets_IAT_mean_vs_packet_IAT_total": {
+        "correlation": 0.9999999999999996,
+        "mutual_information": 2.3608605554864397,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 962858996.3644161
+      },
+      "packets_IAT_mean_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.7740547180451642,
+        "mutual_information": 0.6829860104147025,
+        "flag1_mean": 962858995.3653584,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_packets_IAT_median_vs_rst_flag_counts": {
+        "correlation": -0.10494917001481889,
+        "mutual_information": 0.04129168489389112,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 0.5957727873183619
+      },
+      "fwd_packets_IAT_median_vs_packet_IAT_max": {
+        "correlation": 0.11080333298608125,
+        "mutual_information": 1.595968640995841,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 962858995.6584482
+      },
+      "fwd_packets_IAT_median_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.9999999999999998,
+        "mutual_information": 2.8634166742951006,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 1538774738.5128624
+      },
+      "fwd_packets_IAT_median_vs_bwd_rst_flag_counts": {
+        "correlation": -0.18023047041648915,
+        "mutual_information": 0.06961531020291734,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_packets_IAT_median_vs_packet_IAT_min": {
+        "correlation": 0.11080333412211746,
+        "mutual_information": 1.5015137233602274,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_packets_IAT_median_vs_bwd_packets_IAT_total": {
+        "correlation": -0.02539861790811929,
+        "mutual_information": 1.1317238962525638,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_packets_IAT_median_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.10743253817508465,
+        "mutual_information": 0.2474978149069429,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_packets_IAT_median_vs_packet_IAT_total": {
+        "correlation": 0.11080333116514741,
+        "mutual_information": 1.5904505666210453,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_packets_IAT_median_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.02539861496071286,
+        "mutual_information": 1.1127074189658153,
+        "flag1_mean": 1538774738.542354,
+        "flag2_mean": 681650226.8668655
+      },
+      "rst_flag_counts_vs_packet_IAT_max": {
+        "correlation": -0.6081479386440821,
+        "mutual_information": 0.3121805391991117,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 962858995.6584482
+      },
+      "rst_flag_counts_vs_fwd_packets_IAT_mode": {
+        "correlation": -0.10494916996811797,
+        "mutual_information": 0.039957334371197195,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 1538774738.5128624
+      },
+      "rst_flag_counts_vs_bwd_rst_flag_counts": {
+        "correlation": 0.7280262172126785,
+        "mutual_information": 0.37200758954567315,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 0.4385733157199472
+      },
+      "rst_flag_counts_vs_packet_IAT_min": {
+        "correlation": -0.6081479383279121,
+        "mutual_information": 0.2941104201560183,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 962858995.2080549
+      },
+      "rst_flag_counts_vs_bwd_packets_IAT_total": {
+        "correlation": 0.656441376371284,
+        "mutual_information": 0.3142425081530331,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 681650227.9415995
+      },
+      "rst_flag_counts_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.5253496482319338,
+        "mutual_information": 0.5111846312097854,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 0.5254387622721267
+      },
+      "rst_flag_counts_vs_packet_IAT_total": {
+        "correlation": -0.608147939052806,
+        "mutual_information": 0.3208657249274056,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 962858996.3644161
+      },
+      "rst_flag_counts_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.6564413754348987,
+        "mutual_information": 0.3063659323561079,
+        "flag1_mean": 0.5957727873183619,
+        "flag2_mean": 681650226.8668655
+      },
+      "packet_IAT_max_vs_fwd_packets_IAT_mode": {
+        "correlation": 0.11080333303309625,
+        "mutual_information": 1.531692105258558,
+        "flag1_mean": 962858995.6584482,
+        "flag2_mean": 1538774738.5128624
+      },
+      "packet_IAT_max_vs_bwd_rst_flag_counts": {
+        "correlation": -0.86308541440724,
+        "mutual_information": 0.4921113718744552,
+        "flag1_mean": 962858995.6584482,
+        "flag2_mean": 0.4385733157199472
+      },
+      "packet_IAT_max_vs_packet_IAT_min": {
+        "correlation": 1.0,
+        "mutual_information": 2.2265679419647304,
+        "flag1_mean": 962858995.6584482,
+        "flag2_mean": 962858995.2080549
+      },
+      "packet_IAT_max_vs_bwd_packets_IAT_total": {
+        "correlation": -0.774054720912329,
+        "mutual_information": 0.6914284684548133,
+        "flag1_mean": 962858995.6584482,
+        "flag2_mean": 681650227.9415995
+      },
+      "packet_IAT_max_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.014288579219814426,
+        "mutual_information": 0.7781534565159349,
+        "flag1_mean": 962858995.6584482,
+        "flag2_mean": 0.5254387622721267
+      },
+      "packet_IAT_max_vs_packet_IAT_total": {
+        "correlation": 1.0,
+        "mutual_information": 2.3872022522716505,
+        "flag1_mean": 962858995.6584482,
+        "flag2_mean": 962858996.3644161
+      },
+      "packet_IAT_max_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.7740547186286982,
+        "mutual_information": 0.6857252577826936,
+        "flag1_mean": 962858995.6584482,
+        "flag2_mean": 681650226.8668655
+      },
+      "fwd_packets_IAT_mode_vs_bwd_rst_flag_counts": {
+        "correlation": -0.180230470366983,
+        "mutual_information": 0.06688770082922968,
+        "flag1_mean": 1538774738.5128624,
+        "flag2_mean": 0.4385733157199472
+      },
+      "fwd_packets_IAT_mode_vs_packet_IAT_min": {
+        "correlation": 0.11080333416913246,
+        "mutual_information": 1.5164203089893782,
+        "flag1_mean": 1538774738.5128624,
+        "flag2_mean": 962858995.2080549
+      },
+      "fwd_packets_IAT_mode_vs_bwd_packets_IAT_total": {
+        "correlation": -0.025398617863914723,
+        "mutual_information": 1.13009716807161,
+        "flag1_mean": 1538774738.5128624,
+        "flag2_mean": 681650227.9415995
+      },
+      "fwd_packets_IAT_mode_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.10743253816267853,
+        "mutual_information": 0.25016670417807507,
+        "flag1_mean": 1538774738.5128624,
+        "flag2_mean": 0.5254387622721267
+      },
+      "fwd_packets_IAT_mode_vs_packet_IAT_total": {
+        "correlation": 0.11080333121216242,
+        "mutual_information": 1.5826696703250565,
+        "flag1_mean": 1538774738.5128624,
+        "flag2_mean": 962858996.3644161
+      },
+      "fwd_packets_IAT_mode_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.025398614916508303,
+        "mutual_information": 1.1142691289058266,
+        "flag1_mean": 1538774738.5128624,
+        "flag2_mean": 681650226.8668655
+      },
+      "bwd_rst_flag_counts_vs_packet_IAT_min": {
+        "correlation": -0.8630854140945479,
+        "mutual_information": 0.48908445944096846,
+        "flag1_mean": 0.4385733157199472,
+        "flag2_mean": 962858995.2080549
+      },
+      "bwd_rst_flag_counts_vs_bwd_packets_IAT_total": {
+        "correlation": 0.8971447557144334,
+        "mutual_information": 0.5928001088774919,
+        "flag1_mean": 0.4385733157199472,
+        "flag2_mean": 681650227.9415995
+      },
+      "bwd_rst_flag_counts_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.1037677099220101,
+        "mutual_information": 0.5682528123167079,
+        "flag1_mean": 0.4385733157199472,
+        "flag2_mean": 0.5254387622721267
+      },
+      "bwd_rst_flag_counts_vs_packet_IAT_total": {
+        "correlation": -0.8630854147961666,
+        "mutual_information": 0.5281633112944872,
+        "flag1_mean": 0.4385733157199472,
+        "flag2_mean": 962858996.3644161
+      },
+      "bwd_rst_flag_counts_vs_bwd_packets_IAT_mode": {
+        "correlation": 0.8971447541194189,
+        "mutual_information": 0.5883800582015266,
+        "flag1_mean": 0.4385733157199472,
+        "flag2_mean": 681650226.8668655
+      },
+      "packet_IAT_min_vs_bwd_packets_IAT_total": {
+        "correlation": -0.7740547200154154,
+        "mutual_information": 0.5458775360283243,
+        "flag1_mean": 962858995.2080549,
+        "flag2_mean": 681650227.9415995
+      },
+      "packet_IAT_min_vs_syn_flag_percentage_in_total": {
+        "correlation": 0.014288579041097274,
+        "mutual_information": 0.6513594712745361,
+        "flag1_mean": 962858995.2080549,
+        "flag2_mean": 0.5254387622721267
+      },
+      "packet_IAT_min_vs_packet_IAT_total": {
+        "correlation": 0.9999999999999999,
+        "mutual_information": 2.2120401224459014,
+        "flag1_mean": 962858995.2080549,
+        "flag2_mean": 962858996.3644161
+      },
+      "packet_IAT_min_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.7740547177317842,
+        "mutual_information": 0.5349390941207708,
+        "flag1_mean": 962858995.2080549,
+        "flag2_mean": 681650226.8668655
+      },
+      "bwd_packets_IAT_total_vs_syn_flag_percentage_in_total": {
+        "correlation": -0.16112064255293929,
+        "mutual_information": 0.6739566845517233,
+        "flag1_mean": 681650227.9415995,
+        "flag2_mean": 0.5254387622721267
+      },
+      "bwd_packets_IAT_total_vs_packet_IAT_total": {
+        "correlation": -0.7740547223337537,
+        "mutual_information": 0.7106183657791276,
+        "flag1_mean": 681650227.9415995,
+        "flag2_mean": 962858996.3644161
+      },
+      "bwd_packets_IAT_total_vs_bwd_packets_IAT_mode": {
+        "correlation": 1.0,
+        "mutual_information": 1.8835815056537384,
+        "flag1_mean": 681650227.9415995,
+        "flag2_mean": 681650226.8668655
+      },
+      "syn_flag_percentage_in_total_vs_packet_IAT_total": {
+        "correlation": 0.014288579500252738,
+        "mutual_information": 0.8102718799791266,
+        "flag1_mean": 0.5254387622721267,
+        "flag2_mean": 962858996.3644161
+      },
+      "syn_flag_percentage_in_total_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.16112064275301335,
+        "mutual_information": 0.7116672575667624,
+        "flag1_mean": 0.5254387622721267,
+        "flag2_mean": 681650226.8668655
+      },
+      "packet_IAT_total_vs_bwd_packets_IAT_mode": {
+        "correlation": -0.7740547200501229,
+        "mutual_information": 0.6911095906860809,
+        "flag1_mean": 962858996.3644161,
+        "flag2_mean": 681650226.8668655
+      }
+    },
+    "by_attack_type": {
+      "rst_flag_percentage_in_total": {
+        "mean": {
+          "Attack": 0.3768069447952444
+        },
+        "std": {
+          "Attack": 0.37271433853682406
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "packets_IAT_median": {
+        "mean": {
+          "Attack": 962858995.3021755
+        },
+        "std": {
+          "Attack": 844745327.6383601
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_syn_flag_percentage_in_total": {
+        "mean": {
+          "Attack": 0.4984839908190225
+        },
+        "std": {
+          "Attack": 0.39190646603185825
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "packets_IAT_mode": {
+        "mean": {
+          "Attack": 962858995.2080562
+        },
+        "std": {
+          "Attack": 844745327.7457815
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "bwd_rst_flag_percentage_in_total": {
+        "mean": {
+          "Attack": 0.2222494811228534
+        },
+        "std": {
+          "Attack": 0.2787326792837554
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_packets_IAT_mean": {
+        "mean": {
+          "Attack": 1538774738.5749545
+        },
+        "std": {
+          "Attack": 503031832.32095987
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_psh_flag_percentage_in_fwd_packets": {
+        "mean": {
+          "Attack": 0.0020758634081902245
+        },
+        "std": {
+          "Attack": 0.03135537416635228
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 0.5714286
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_packets_IAT_max": {
+        "mean": {
+          "Attack": 1538774738.6671958
+        },
+        "std": {
+          "Attack": 503031832.0384204
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "packets_rate": {
+        "mean": {
+          "Attack": 6721.539525152457
+        },
+        "std": {
+          "Attack": 10934.076697242306
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 133152.52
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_syn_flag_percentage_in_fwd_packets": {
+        "mean": {
+          "Attack": 0.7065169529194187
+        },
+        "std": {
+          "Attack": 0.45400281368871964
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_packets_IAT_min": {
+        "mean": {
+          "Attack": 1538774738.512862
+        },
+        "std": {
+          "Attack": 503031832.5111518
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "bwd_packets_rate": {
+        "mean": {
+          "Attack": 3332.6743432160397
+        },
+        "std": {
+          "Attack": 5110.712188407405
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 38130.035
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "bwd_psh_flag_percentage_in_bwd_packets": {
+        "mean": {
+          "Attack": 0.0024218406869220607
+        },
+        "std": {
+          "Attack": 0.038737499030784245
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 0.6666667
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_packets_IAT_total": {
+        "mean": {
+          "Attack": 1538774738.8735306
+        },
+        "std": {
+          "Attack": 503031831.40640646
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_packets_rate": {
+        "mean": {
+          "Attack": 3388.8651719186682
+        },
+        "std": {
+          "Attack": 6820.648604446282
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 133152.52
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "packets_IAT_mean": {
+        "mean": {
+          "Attack": 962858995.3653584
+        },
+        "std": {
+          "Attack": 844745327.5662473
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_packets_IAT_median": {
+        "mean": {
+          "Attack": 1538774738.542354
+        },
+        "std": {
+          "Attack": 503031832.4208164
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "rst_flag_counts": {
+        "mean": {
+          "Attack": 0.5957727873183619
+        },
+        "std": {
+          "Attack": 0.49106631751759267
+        },
+        "min": {
+          "Attack": 0
+        },
+        "max": {
+          "Attack": 1
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "packet_IAT_max": {
+        "mean": {
+          "Attack": 962858995.6584482
+        },
+        "std": {
+          "Attack": 844745327.2317357
+        },
+        "min": {
+          "Attack": 1.5e-05
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "fwd_packets_IAT_mode": {
+        "mean": {
+          "Attack": 1538774738.5128627
+        },
+        "std": {
+          "Attack": 503031832.51115006
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "bwd_rst_flag_counts": {
+        "mean": {
+          "Attack": 0.4385733157199472
+        },
+        "std": {
+          "Attack": 0.4965404910317957
+        },
+        "min": {
+          "Attack": 0
+        },
+        "max": {
+          "Attack": 1
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "packet_IAT_min": {
+        "mean": {
+          "Attack": 962858995.2080549
+        },
+        "std": {
+          "Attack": 844745327.745783
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "bwd_packets_IAT_total": {
+        "mean": {
+          "Attack": 681650227.9415995
+        },
+        "std": {
+          "Attack": 834939941.7127414
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "syn_flag_percentage_in_total": {
+        "mean": {
+          "Attack": 0.5254387622721268
+        },
+        "std": {
+          "Attack": 0.39419995903317717
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "packet_IAT_total": {
+        "mean": {
+          "Attack": 962858996.3644164
+        },
+        "std": {
+          "Attack": 844745326.4259933
+        },
+        "min": {
+          "Attack": 1.5e-05
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      },
+      "bwd_packets_IAT_mode": {
+        "mean": {
+          "Attack": 681650226.8668655
+        },
+        "std": {
+          "Attack": 834939942.5913218
+        },
+        "min": {
+          "Attack": 0.0
+        },
+        "max": {
+          "Attack": 1703001600.0
+        },
+        "count": {
+          "Attack": 757
+        }
+      }
+    },
+    "top_combinations": {
+      "(0.5, 0.5, 0.5, 0.0, 1.0)": 80,
+      "(1.0, 0.0, 0.0, 0.0, 0.0)": 8,
+      "(1.0, 0.0, 1.0, 0.0, 0.0)": 7,
+      "(0.0, 1.0, 0.0, 0.0, 1.0)": 5
+    }
+  },
+  "network_patterns": {
+    "directional_patterns": {
+      "fwd_init_win_bytes_vs_bwd_init_win_bytes": {
+        "fwd_mean": 18265.639365918098,
+        "bwd_mean": 3022.3963011889036,
+        "ratio": 6.0434296318894525,
+        "correlation": -0.01521805820602063
+      }
+    }
+  },
+  "attack_patterns": {
+    "feature_importance": {
+      "total_header_bytes": 0.0,
+      "fwd_median_header_bytes": 0.0,
+      "rst_flag_percentage_in_total": 0.0,
+      "packets_IAT_median": 0.0,
+      "max_header_bytes": 0.0,
+      "fwd_mode_header_bytes": 0.0,
+      "fwd_syn_flag_percentage_in_total": 0.0,
+      "packets_IAT_mode": 0.0,
+      "min_header_bytes": 0.0,
+      "fwd_init_win_bytes": 0.0,
+      "bwd_rst_flag_percentage_in_total": 0.0,
+      "fwd_packets_IAT_mean": 0.0,
+      "mean_header_bytes": 0.0,
+      "bwd_init_win_bytes": 0.0,
+      "fwd_psh_flag_percentage_in_fwd_packets": 0.0,
+      "fwd_packets_IAT_max": 0.0,
+      "median_header_bytes": 0.0,
+      "packets_rate": 0.0,
+      "fwd_syn_flag_percentage_in_fwd_packets": 0.0,
+      "fwd_packets_IAT_min": 0.0
+    },
+    "attack_signatures": {
+      "Attack": {}
+    }
+  },
+  "feature_categories": {
+    "tcp_flags": [
+      "rst_flag_percentage_in_total",
+      "packets_IAT_median",
+      "fwd_syn_flag_percentage_in_total",
+      "packets_IAT_mode",
+      "bwd_rst_flag_percentage_in_total",
+      "fwd_packets_IAT_mean",
+      "fwd_psh_flag_percentage_in_fwd_packets",
+      "fwd_packets_IAT_max",
+      "packets_rate",
+      "fwd_syn_flag_percentage_in_fwd_packets",
+      "fwd_packets_IAT_min",
+      "bwd_packets_rate",
+      "bwd_psh_flag_percentage_in_bwd_packets",
+      "fwd_packets_IAT_total",
+      "fwd_packets_rate",
+      "packets_IAT_mean",
+      "fwd_packets_IAT_median",
+      "rst_flag_counts",
+      "packet_IAT_max",
+      "fwd_packets_IAT_mode",
+      "bwd_rst_flag_counts",
+      "packet_IAT_min",
+      "bwd_packets_IAT_total",
+      "syn_flag_percentage_in_total",
+      "packet_IAT_total",
+      "bwd_packets_IAT_mode"
+    ],
+    "header_bytes": [
+      "total_header_bytes",
+      "fwd_median_header_bytes",
+      "max_header_bytes",
+      "fwd_mode_header_bytes",
+      "min_header_bytes",
+      "mean_header_bytes",
+      "median_header_bytes",
+      "mode_header_bytes",
+      "fwd_total_header_bytes",
+      "fwd_max_header_bytes",
+      "fwd_min_header_bytes",
+      "fwd_mean_header_bytes"
+    ],
+    "timing_features": [],
+    "rate_features": [],
+    "window_features": [
+      "fwd_init_win_bytes",
+      "bwd_init_win_bytes"
+    ],
+    "packet_counts": [],
+    "directional_features": {
+      "forward": [
+        "fwd_median_header_bytes",
+        "fwd_mode_header_bytes",
+        "fwd_syn_flag_percentage_in_total",
+        "fwd_init_win_bytes",
+        "fwd_packets_IAT_mean",
+        "fwd_psh_flag_percentage_in_fwd_packets",
+        "fwd_packets_IAT_max",
+        "fwd_syn_flag_percentage_in_fwd_packets",
+        "fwd_packets_IAT_min",
+        "fwd_packets_IAT_total",
+        "fwd_total_header_bytes",
+        "fwd_packets_rate",
+        "fwd_packets_IAT_median",
+        "fwd_max_header_bytes",
+        "fwd_packets_IAT_mode",
+        "fwd_min_header_bytes",
+        "fwd_mean_header_bytes"
+      ],
+      "backward": [
+        "bwd_rst_flag_percentage_in_total",
+        "bwd_init_win_bytes",
+        "bwd_packets_rate",
+        "bwd_psh_flag_percentage_in_bwd_packets",
+        "bwd_rst_flag_counts",
+        "bwd_packets_IAT_total",
+        "bwd_packets_IAT_mode"
+      ]
+    },
+    "labels": [
+      "label",
+      "activity"
+    ]
+  },
+  "network_graph_metrics": {
+    "num_nodes": 21,
+    "num_edges": 35,
+    "density": 0.16666666666666666,
+    "connected_components": 6,
+    "most_central_features": {
+      "packets_IAT_median": 0.25,
+      "packets_IAT_mode": 0.25,
+      "packets_IAT_mean": 0.25,
+      "packet_IAT_max": 0.25,
+      "packet_IAT_min": 0.25,
+      "packet_IAT_total": 0.25,
+      "fwd_packets_IAT_mean": 0.25,
+      "fwd_packets_IAT_max": 0.25,
+      "fwd_packets_IAT_min": 0.25,
+      "fwd_packets_IAT_total": 0.25
+    }
+  }
+}
