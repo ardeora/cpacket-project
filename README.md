@@ -4,12 +4,14 @@ A high-performance machine learning pipeline for DDoS traffic classification usi
 
 ## 📊 Dataset Overview
 
-- **Dataset**: `datasets/ddos.parquet`
-- **Size**: 540,494 rows × 319 columns
-- **Classes**:
-  - Benign: 349,178 samples (64.6%)
-  - Attack: 170,436 samples (31.5%)
-  - Suspicious: 20,880 samples (3.9%)
+- **Primary Dataset**: `datasets/ddos.parquet`
+  - **Size**: 540,494 rows × 319 columns
+  - **Classes**:
+    - Benign: 349,178 samples (64.6%)
+    - Attack: 170,436 samples (31.5%)
+    - Suspicious: 20,880 samples (3.9%)
+- **Additional Dataset**: `datasets/attack-tcp-flag-osyn.csv`
+  - TCP flag-based attack data for evaluation and testing
 
 ## 🎯 Features & Performance
 
@@ -55,14 +57,41 @@ This trains Random Forest models for all feature selection methods:
 - Automatically saves models, results, and visualizations
 - Generates performance comparison reports
 
+### 3. Evaluate Models
+
+```bash
+# Evaluate on test dataset
+python evaluate_classifier.py datasets/attack-tcp-flag-osyn.csv
+
+# Show all predictions (not just errors)
+python evaluate_classifier.py datasets/attack-tcp-flag-osyn.csv --show-all
+
+# Use different feature selection method
+python evaluate_classifier.py datasets/attack-tcp-flag-osyn.csv --method anova
+
+# See evaluation help
+python evaluate_classifier.py --help
+```
+
+For detailed evaluation instructions, see [EVALUATION_README.md](EVALUATION_README.md).
+
 ## 📁 Project Structure
 
 ```
 cpacket-project/
 ├── classifier.py           # Main classifier implementation
+├── evaluate_classifier.py  # Model evaluation script with CLI
 ├── requirements.txt        # Python dependencies
+├── .gitignore             # Git ignore rules
+├── README.md              # Main project documentation
+├── EVALUATION_README.md   # Evaluation script documentation
+├── cpacket/               # Python virtual environment
+│   ├── bin/               # Environment binaries
+│   ├── lib/               # Python packages
+│   └── pyvenv.cfg         # Environment configuration
 ├── datasets/
-│   └── ddos.parquet       # DDoS traffic dataset (540k samples)
+│   ├── ddos.parquet       # Primary DDoS dataset (540k samples)
+│   └── attack-tcp-flag-osyn.csv # TCP flag attack data
 ├── features/              # Feature selection configurations
 │   ├── anova.json         # ANOVA F-test selected features
 │   ├── extra_tree.json    # Extra Trees selected features
@@ -77,7 +106,8 @@ cpacket-project/
 └── plots/                 # Generated visualizations
     ├── anova_results.png
     ├── extra_tree_results.png
-    └── information_gain_results.png
+    ├── information_gain_results.png
+    └── rf_selected_results.png
 ```
 
 ## 🔧 Using the Classifier
@@ -137,6 +167,29 @@ The classifier automatically generates:
 3. **Feature Importance**: Ranking of most influential features
 4. **Performance Plots**: Comprehensive visualizations saved in `plots/`
 5. **Results Files**: Detailed metrics saved in `results/`
+
+## 🔍 Model Evaluation
+
+### Evaluation Script
+
+The project includes a comprehensive evaluation script (`evaluate_classifier.py`) for testing trained models on new data:
+
+- **Command-line interface** for quick testing
+- **Programmatic API** for integration
+- **Detailed prediction analysis** with confidence scores
+- **Error analysis** to identify misclassified samples
+- **Multiple display options** (all predictions or errors only)
+
+### Evaluation Features
+
+- ✅ **Flexible input**: Works with any CSV file containing a `label` column
+- ✅ **Multiple models**: Test different feature selection methods
+- ✅ **Confidence scores**: See prediction probabilities
+- ✅ **Error analysis**: Focus on misclassified samples
+- ✅ **Activity mapping**: Enhanced display with activity types
+- ✅ **Summary statistics**: Overall accuracy and confusion matrices
+
+See [EVALUATION_README.md](EVALUATION_README.md) for complete evaluation documentation.
 
 ## 🎛️ Configuration Options
 
@@ -203,11 +256,15 @@ The modular design allows easy integration of other classifiers (SVM, XGBoost, e
 ### Key Files
 
 - **`classifier.py`**: Main training script
-- **`datasets/ddos.parquet`**: DDoS traffic dataset
+- **`evaluate_classifier.py`**: Model evaluation script with CLI
+- **`datasets/ddos.parquet`**: Primary DDoS traffic dataset
+- **`datasets/attack-tcp-flag-osyn.csv`**: TCP flag attack data for testing
 - **`features/*.json`**: Feature selection configurations
 - **`saved_models/rf_classifier_extra_tree.joblib`**: Best performing model
 - **`results/results_extra_tree.json`**: Best model performance metrics
 - **`plots/extra_tree_results.png`**: Best model visualizations
+- **`EVALUATION_README.md`**: Detailed evaluation documentation
+- **`cpacket/`**: Python virtual environment
 
 ### Generated Results
 
@@ -224,5 +281,8 @@ All training runs automatically generate:
 - ✅ **Clean, organized structure** with separated models, results, and plots
 - ✅ **Production-ready models** saved and ready for deployment
 - ✅ **Comprehensive evaluation** with detailed metrics and visualizations
+- ✅ **Command-line evaluation tool** for testing on new data
+- ✅ **Virtual environment setup** with all dependencies managed
+- ✅ **Multiple datasets** for training and evaluation
 
-_This project demonstrates state-of-the-art performance in DDoS traffic classification using advanced feature selection and Random Forest algorithms._
+_This project demonstrates state-of-the-art performance in DDoS traffic classification using advanced feature selection and Random Forest algorithms, complete with evaluation tools for production deployment._
