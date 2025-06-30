@@ -1,1 +1,175 @@
-# cPacket project files
+# CPacket Project - DDoS Attack Detection & Synthetic Data Generation
+
+A comprehensive machine learning pipeline for DDoS attack detection and synthetic network traffic data generation using Large Language Models (LLMs). This project combines traditional machine learning approaches with modern LLM fine-tuning techniques to create realistic synthetic network attack data.
+
+## 🔗 Project Overview
+
+This project implements a complete workflow for:
+
+- **Data Extraction**: Extract specific attack patterns from DDoS datasets
+- **Data Analysis**: Perform statistical analysis to understand attack characteristics
+- **LLM Fine-tuning**: Train language models to generate synthetic network traffic data
+- **Data Generation**: Create new synthetic attack data using fine-tuned models
+- **Data Validation**: Convert generated data back to structured formats for verification
+
+## 📁 Project Structure
+
+```
+├── analysis/                    # Data analysis scripts
+│   └── basic_data_analysis.py  # Statistical analysis of network traffic data
+├── data_preparation/           # Data preprocessing for LLM training
+│   └── prepare_data.py        # Convert CSV data to LLM training format
+├── datasets/                  # Raw and processed datasets
+│   ├── attack_tcp_flag_osyn.csv
+│   └── ddos.parquet
+├── features/                  # Feature selection results
+│   ├── anova.json
+│   ├── extra_tree.json
+│   └── information_gain.json
+├── fine-tuning/              # LLM fine-tuning notebooks
+│   ├── unsloth-train.ipynb   # Training notebook for Google Colab
+│   └── unsloth-inference.ipynb # Inference/generation notebook
+├── generated_data/           # LLM-generated synthetic data
+├── saved_models/            # Trained ML models and encoders
+├── templates/               # LLM instruction templates
+│   └── attack_tcp_flag_osyn/
+│       ├── extra_tree_instructions.txt
+│       ├── extra_tree_system_instructions.txt
+│       ├── extra_tree_user_instructions.txt
+│       ├── extra_tree.xml
+│       └── xml_to_feature_map.json
+├── training_data/           # Processed training data for LLMs
+├── utils/                   # Utility scripts
+│   ├── extract-data-by-activity.py # Extract data by attack type
+│   └── parse_xml.py        # Convert XML output back to CSV
+└── cpacket/                # Python virtual environment
+```
+
+## 🚀 Complete Workflow
+
+### Step 1: Data Extraction by Activity Type
+
+Extract specific attack patterns from the main DDoS dataset:
+
+```bash
+python utils/extract-data-by-activity.py
+```
+
+This script:
+
+- Filters the DDoS dataset by specific attack activities
+- Applies feature selection (ANOVA, Extra Tree, Information Gain)
+- Saves filtered datasets for further analysis
+
+### Step 2: Data Analysis
+
+Analyze the extracted data to understand attack characteristics:
+
+```bash
+python analysis/basic_data_analysis.py
+```
+
+This script provides:
+
+- Basic dataset statistics (shape, attack types, labels)
+- Feature distributions and correlations
+- Statistical summaries of network traffic features
+- Key insights about attack patterns
+
+### Step 3: Create LLM Instruction Templates
+
+Based on the analysis results, create instruction templates for LLM fine-tuning. Use the statistical insights from Step 2 with AI assistants like ChatGPT or Claude to generate:
+
+- **System Instructions**: Define the AI's role as a cybersecurity expert
+- **User Instructions**: Specify the attack generation task
+- **XML Templates**: Structure for the output format
+- **Feature Mappings**: Map XML elements to CSV columns
+
+Example templates are available in `templates/attack_tcp_flag_osyn/`:
+
+- `extra_tree_system_instructions.txt`
+- `extra_tree_user_instructions.txt`
+- `extra_tree.xml`
+- `xml_to_feature_map.json`
+
+### Step 4: Prepare Training Data
+
+Convert CSV data to LLM training format:
+
+```bash
+python data_preparation/prepare_data.py
+```
+
+This script:
+
+- Loads the filtered attack dataset
+- Combines it with instruction templates
+- Generates training data in JSON format suitable for LLM fine-tuning
+- Saves the training data to `training_data/`
+
+### Step 5: Fine-tune LLM Models
+
+Use the provided Jupyter notebooks for LLM fine-tuning on Google Colab:
+
+#### Training Notebook (`fine-tuning/unsloth-train.ipynb`)
+
+- Upload your training data from Step 4
+- Configure the model (Llama, Mistral, etc.) using Unsloth
+- Fine-tune the model on your synthetic data generation task
+- Save the trained model
+
+#### Inference Notebook (`fine-tuning/unsloth-inference.ipynb`)
+
+- Load your fine-tuned model
+- Generate new synthetic attack data
+- Export the generated data as XML files
+
+### Step 6: Parse Generated Data
+
+Convert the LLM-generated XML data back to CSV format:
+
+```bash
+python utils/parse_xml.py
+```
+
+This script:
+
+- Parses XML files generated by the fine-tuned LLM
+- Uses the feature mapping to convert XML to structured CSV
+- Saves the final dataset for classification and verification
+
+## 🛠️ Requirements
+
+### Python Environment
+
+The project uses a virtual environment located in `cpacket/`. Key dependencies include:
+
+- pandas
+- numpy
+- scikit-learn
+- lxml
+- xml.etree.ElementTree
+- pathlib
+
+### For LLM Fine-tuning (Google Colab)
+
+- unsloth
+- transformers
+- torch
+- datasets
+- trl (Transformer Reinforcement Learning)
+
+## 📊 Supported Attack Types
+
+Currently supports:
+
+- **TCP-Flag-OSYN**: TCP connection manipulation attacks
+- Easily extensible to other DDoS attack patterns
+
+## 🔬 Machine Learning Features
+
+The project implements multiple feature selection techniques:
+
+- **ANOVA F-test**: Statistical significance testing
+- **Extra Trees**: Tree-based feature importance
+- **Information Gain**: Information theory-based selection
