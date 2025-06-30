@@ -1,0 +1,47 @@
+<flows>
+  <network_flow>
+    <meta label="Attack" activity="Attack-TCP-Flag-OSYN"/>
+    <headers>
+      <overall total_bytes="40" max_bytes="20" min_bytes="20" mean_bytes="20.0" median_bytes="20.0" mode_bytes="20.0"/>
+      <forward total_bytes="20" median_bytes="20.0" mode_bytes="20.0" max_bytes="20" min_bytes="20" mean_bytes="20.0"/>
+    </headers>
+    <flags>
+      <overall total_rst_flag_percentage="0.5" total_syn_flag_percentage="0.5" rst_flag_counts="1"/>
+      <forward total_syn_flag_percentage="0.5" psh_flag_percentage_in_forward_packets="0.0" syn_flag_percentage_in_forward_packets="1.0"/>
+      <backward total_rst_flag_percentage="0.5" psh_flag_percentage_in_backward_packets="0.0" rst_flag_counts="1"/>
+    </flags>
+    <inter_arrival_timing>
+      <overall median_packets="0.0011" mode_packets="0.0011" mean_packets="0.0011" max_packets="0.0011243" min_packets="0.0011243" total_packets="0.0011243"/>
+      <forward total_packets="0.0011243" mean_packets="0.0011243" max_packets="0.0011243" min_packets="0.0011243" median_packets="0.0011243" mode_packets="0.0011243"/>
+      <backward total_packets="0.0011" mode_bytes="0.0011"/>
+    </inter_arrival_timing>
+    <window>
+      <forward init_bytes="120"/>
+      <backward init_bytes="60"/>
+    </window>
+    <rates packets="1040.1023" backward_packets="520.0512" forward_packets="520.0512"/>
+  </network_flow>
+
+  <network_flow>
+    <meta label="Attack" activity="Attack-TCP-Flag-OSYN"/>
+    <headers>
+      <overall total_bytes="40" max_bytes="20" min_bytes="20" mean_bytes="20.0" median_bytes="20.0" mode_bytes="20.0"/>
+      <forward total_bytes="20" median_bytes="20.0" mode_bytes="20.0" max_bytes="20" min_bytes="20" mean_bytes="20.0"/>
+    </headers>
+    <flags>
+      <overall total_rst_flag_percentage="0.5" total_syn_flag_percentage="0.5" rst_flag_counts="1"/>
+      <forward total_syn_flag_percentage="0.5" psh_flag_percentage_in_forward_packets="0.0" syn_flag_percentage_in_forward_packets="1.0"/>
+      <backward total_rst_flag_percentage="0.5" psh_flag_percentage_in_backward_packets="0.0" rst_flag_counts="1"/>
+    </flags>
+    <inter_arrival_timing>
+      <overall median_packets="0.0001" mode_packets="0.0001" mean_packets="0.0001" max_packets="4.1799e-05" min_packets="4.1799e-05" total_packets="4.1799e-05"/>
+      <forward total_packets="1703000700.0" mean_packets="1703000700.0" max_packets="1703000700.0" min_packets="1703000700.0" median_packets="1703000700.0" mode_packets="1703000700.0"/>
+      <backward total_packets="1703000700.0" mode_bytes="1703000700.0"/>
+    </inter_arrival_timing>
+    <window>
+      <forward init_bytes="8192"/>
+      <backward init_bytes="0"/>
+    </window>
+    <rates packets="22335.166" backward_packets="11167.583" forward_packets="11167.583"/>
+  </network_flow>
+</flows>

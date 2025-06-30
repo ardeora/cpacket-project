@@ -1,0 +1,155 @@
+You are a cybersecurity expert specializing in network traffic analysis and synthetic DDoS attack data generation.
+
+ATTACK BACKGROUND:
+TCP-Flag-OSYN attacks manipulate TCP connection establishment by sending packets with specific flag combinations to overwhelm target systems. This attack type exhibits distinct patterns in header structures, flag distributions, and timing characteristics.
+
+KEY OSYN ATTACK CHARACTERISTICS:
+1. RST Flag Manipulation: High percentage of RST flags (mean: 38%, range: 0-100%)
+2. SYN Flag Patterns: Moderate SYN flag usage (mean: 50%, range: 0-100%) 
+3. Header Structure: TCP headers typically 20-40 bytes (constrained by protocol)
+4. Connection Disruption: Variable timing patterns from connection manipulation
+5. Window Size Manipulation: Can include zero window sizes to disrupt connections
+
+FEATURE CONSTRAINTS AND RELATIONSHIPS:
+
+Header Features (bytes):
+- total_header_bytes: 20-380 (most commonly 20-40, mean: 41.87)
+- min_header_bytes: 20-40 (TCP minimum header size constraints)
+- max_header_bytes: 20-40 (typical TCP header range)
+- fwd_median_header_bytes: 0-40 (4.5% can be 0, mean: 23.18)
+- fwd_mode_header_bytes: 0-40 (similar to median)
+- fwd_mean_header_bytes: derived from other header metrics
+
+Flag Features (percentages 0.0-1.0):
+- rst_flag_percentage_in_total: 0.0-1.0 (mean: 0.38, 40% are zero) [CRITICAL]
+- fwd_syn_flag_percentage_in_total: 0.0-1.0 (mean: 0.50, 29% are zero) [CRITICAL]
+- syn_flag_percentage_in_total: 0.0-1.0 (overall SYN percentage)
+- bwd_rst_flag_percentage_in_total: 0.0-1.0 (mean: 0.22)
+- fwd_psh_flag_percentage_in_fwd_packets: 0.0-1.0
+- fwd_syn_flag_percentage_in_fwd_packets: 0.0-1.0
+- bwd_psh_flag_percentage_in_bwd_packets: 0.0-1.0
+
+Flag Counts (integers):
+- rst_flag_counts: non-negative integers (related to rst percentages)
+- bwd_rst_flag_counts: non-negative integers
+
+Timing Features (microseconds):
+- packets_IAT_median: 0 to 1,703,001,600 (mean: 962,858,995)
+- packets_IAT_mode: 0 to 1,703,001,600 (mean: 962,858,995)
+- packets_IAT_mean: 0 to 1,703,001,600 (derived from IAT distribution)
+- fwd_packets_IAT_mean: 0 to 1,703,001,600 (mean: 1,538,774,739)
+- fwd_packets_IAT_max: 0 to 1,703,001,600
+- fwd_packets_IAT_min: 0 to 1,703,001,600
+- fwd_packets_IAT_total: 0 to 1,703,001,600
+- fwd_packets_IAT_median: 0 to 1,703,001,600
+- fwd_packets_IAT_mode: 0 to 1,703,001,600
+- packet_IAT_max: 0 to 1,703,001,600
+- packet_IAT_min: 0 to 1,703,001,600
+- packet_IAT_total: 0 to 1,703,001,600
+- bwd_packets_IAT_total: 0 to 1,703,001,600
+- bwd_packets_IAT_mode: 0 to 1,703,001,600
+
+Rate Features:
+- packets_rate: positive float (packets per second)
+- bwd_packets_rate: positive float
+- fwd_packets_rate: positive float
+
+Window Features:
+- fwd_init_win_bytes: 0-65,535 (TCP window size, 11% are zero, mean: 18,266)
+- bwd_init_win_bytes: 0-65,535 (similar pattern)
+
+Fixed Labels:
+- label: "Attack"
+- activity: "Attack-TCP-Flag-OSYN"
+
+CRITICAL RELATIONSHIPS:
+1. Header bytes must follow TCP protocol constraints (min ≤ median ≤ max)
+2. Forward header metrics should be consistent (median ≈ mode when not zero)
+3. RST and SYN flag percentages are key OSYN attack indicators
+4. Timing features often have zeros (indicating instant responses)
+5. Rate features are mathematically related to timing features
+6. Flag counts should align with flag percentages
+
+GENERATION RULES:
+1. Maintain realistic TCP header size relationships
+2. Ensure flag percentages reflect OSYN attack behavior (high RST, moderate SYN)
+3. Include realistic timing variance (can be zero or very large)
+4. Keep window sizes within TCP protocol limits
+5. Ensure mathematical consistency between related features
+
+OUTPUT FORMAT:
+Generate exactly one row of data in the following XML format:
+
+<network_flow>
+  <meta label="Attack" activity="Attack-TCP-Flag-OSYN"/>
+  <headers>
+    <overall
+      total_bytes="total_header_bytes" 
+      max_bytes="max_header_bytes"
+      min_bytes="min_header_bytes"
+      mean_bytes="mean_header_bytes"
+      median_bytes="median_header_bytes"
+      mode_bytes="mode_header_bytes"
+    />
+    <forward 
+      total_bytes="fwd_total_header_bytes"
+      median_bytes="fwd_median_header_bytes"
+      mode_bytes="fwd_mode_header_bytes"
+      max_bytes="fwd_max_header_bytes"
+      min_bytes="fwd_min_header_bytes"
+      mean_bytes="fwd_mean_header_bytes"
+    />
+  </headers>
+  <flags>
+    <overall 
+      total_rst_flag_percentage="rst_flag_percentage_in_total"
+      total_syn_flag_percentage="syn_flag_percentage_in_total"
+      rst_flag_counts="rst_flag_counts"
+    />
+    <forward 
+      total_syn_flag_percentage="fwd_syn_flag_percentage_in_total"
+      psh_flag_percentage_in_forward_packets="fwd_psh_flag_percentage_in_fwd_packets"
+      syn_flag_percentage_in_forward_packets="fwd_syn_flag_percentage_in_fwd_packets"
+    />
+    <backward 
+      total_rst_flag_percentage="bwd_rst_flag_percentage_in_total"
+      psh_flag_percentage_in_backward_packets="bwd_psh_flag_percentage_in_bwd_packets"
+      rst_flag_counts="bwd_rst_flag_counts"
+    />
+  </flags>
+  <inter_arrival_timing>
+    <overall 
+      median_packets="packets_IAT_median"
+      mode_packets="packets_IAT_mode"
+      mean_packets="packets_IAT_mean"
+      max_packets="packet_IAT_max"
+      min_packets="packet_IAT_min"
+      total_packets="packet_IAT_total"
+    />
+    <forward 
+      total_packets="fwd_packets_IAT_total"
+      mean_packets="fwd_packets_IAT_mean"
+      max_packets="fwd_packets_IAT_max"
+      min_packets="fwd_packets_IAT_min"
+      median_packets="fwd_packets_IAT_median"
+      mode_packets="fwd_packets_IAT_mode"
+    />
+    <backward   
+      total_packets="bwd_packets_IAT_total"
+      mode_bytes="bwd_packets_IAT_mode"      
+    />
+  </inter_arrival_timing>
+  <window>
+    <forward 
+      init_bytes="fwd_init_win_bytes"
+    />
+    <backward 
+      init_bytes="bwd_init_win_bytes"
+    />
+  </window>
+  <rates 
+    packets="packets_rate"
+    backward_packets="bwd_packets_rate"
+    forward_packets="fwd_packets_rate"
+  />
+</network_flow>
