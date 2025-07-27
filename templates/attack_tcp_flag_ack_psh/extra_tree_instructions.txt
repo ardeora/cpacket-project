@@ -1,0 +1,160 @@
+You are a cybersecurity expert specializing in network traffic analysis and synthetic DDoS attack data generation.
+
+TASK: Generate realistic network traffic features for a TCP-Flag-ACK-PSH attack.
+
+ATTACK BACKGROUND:
+TCP-Flag-ACK-PSH attacks exploit TCP acknowledgment and push flags to overwhelm target systems by manipulating packet flow control and forcing immediate data processing. This attack type exhibits distinct patterns in flag distributions, header structures, and timing characteristics.
+
+KEY ACK-PSH ATTACK CHARACTERISTICS:
+1. RST Flag Dominance: High percentage of RST flags (mean: 55%, range: 0-100%) [CRITICAL]
+2. SYN Flag Suppression: Low SYN flag usage (mean: 20%, range: 0-100%, 73% are zero) [CRITICAL]
+3. Strong Flag Anti-Correlation: RST and SYN flags have strong negative correlation (-0.693)
+4. Header Structure: TCP headers typically 20-40 bytes, often in multiples of 20
+5. Forward Direction Disruption: High missing data in forward direction (46-69% zero values)
+6. Rate-Flag Correlation: Packet rate correlates with SYN flag percentage (+0.301)
+
+FEATURE CONSTRAINTS AND RELATIONSHIPS:
+
+Header Features (bytes):
+- total_header_bytes: 20-384 (commonly 20, 40, 60, 80; mean: 35.49)
+- min_header_bytes: 20-40 (TCP minimum header size, mean: 20.57)
+- max_header_bytes: 20-40 (typical TCP header range, mean: 21.63)
+- fwd_median_header_bytes: 0-40 (46.48% are zero/missing, mean: 12.20)
+- fwd_mode_header_bytes: 0-40 (similar to median, 46.48% zero)
+- fwd_mean_header_bytes: derived from other forward header metrics
+- mean_header_bytes: derived from overall header distribution
+- median_header_bytes: derived from header distribution
+
+Flag Features (percentages 0.0-1.0):
+- rst_flag_percentage_in_total: 0.0-1.0 (mean: 0.55, std: 0.32, 14.92% zero) [CRITICAL]
+- fwd_syn_flag_percentage_in_total: 0.0-1.0 (mean: 0.20, std: 0.36, 72.60% zero) [CRITICAL]
+- syn_flag_percentage_in_total: 0.0-1.0 (overall SYN percentage, negative correlation with RST)
+- bwd_rst_flag_percentage_in_total: 0.0-1.0 (mean: 0.30)
+- fwd_psh_flag_percentage_in_fwd_packets: 0.0-1.0
+- fwd_syn_flag_percentage_in_fwd_packets: 0.0-1.0
+- bwd_psh_flag_percentage_in_bwd_packets: 0.0-1.0
+
+Flag Counts (integers):
+- rst_flag_counts: non-negative integers (should align with rst percentages)
+- bwd_rst_flag_counts: non-negative integers
+
+Timing Features (microseconds):
+- packets_IAT_median: 0.0001 to 1,702,933,200 (mean: 674,271,373)
+- packets_IAT_mode: 0 to 1,702,933,200 (mean: 674,271,373, 0.51% zero)
+- fwd_packets_IAT_mean: 0 to 1,702,933,200 (mean: 895,559,459)
+- fwd_packets_IAT_max: 0 to 1,702,933,200
+- fwd_packets_IAT_min: 0 to 1,702,933,200
+- fwd_packets_IAT_total: 0 to 1,702,933,200
+- fwd_packets_IAT_median: 0 to 1,702,933,200
+- fwd_packets_IAT_mode: 0 to 1,702,933,200
+- packet_IAT_max: varies with attack intensity
+- packet_IAT_min: varies with attack intensity
+- packet_IAT_total: 0.0001 to 1,702,933,200 (mean: 674,271,373)
+- bwd_packets_IAT_total: 0 to 1,702,933,200
+- bwd_packets_IAT_mode: 0 to 1,702,933,200 (mean: 244,293,300)
+
+Rate Features:
+- packets_rate: positive float (correlates with SYN flags +0.301)
+- bwd_packets_rate: positive float
+- fwd_packets_rate: positive float
+
+Window Features:
+- fwd_init_win_bytes: 0-65,535 (68.70% are zero/missing, mean: 7,723)
+- bwd_init_win_bytes: 0-65,535 (similar pattern to forward)
+
+Fixed Labels:
+- label: "Attack"
+- activity: "Attack-TCP-Flag-ACK-PSH"
+
+CRITICAL RELATIONSHIPS:
+1. RST vs SYN Anti-Correlation: Strong negative correlation (-0.693) - high RST means low SYN
+2. Rate-SYN Correlation: Packet rate correlates with SYN percentage (+0.301)
+3. Header Byte Consistency: min ≤ median ≤ max, total reflects packet distribution
+4. Forward Direction Disruption: ~47-69% of forward metrics are zero (attack characteristic)
+5. Flag Count Alignment: RST counts should be consistent with RST percentages
+6. Timing Consistency: IAT median and mode should be similar when both non-zero
+
+GENERATION RULES:
+1. Maintain TCP protocol constraints (header sizes, window sizes)
+2. Ensure ACK-PSH attack signature (high RST ~0.55, low SYN ~0.20)
+3. Preserve critical correlations (RST-SYN negative, rate-SYN positive)
+4. Include realistic missing data pattern (46-69% zeros in forward direction)
+5. Keep mathematical consistency between related timing and rate features
+6. Ensure flag percentages and counts are logically consistent
+
+OUTPUT FORMAT:
+Generate exactly one row of data in the following XML format:
+
+<network_flow>
+  <meta label="Attack" activity="Attack-TCP-Flag-ACK-PSH"/>
+  <headers>
+    <overall
+      total_bytes="total_header_bytes" 
+      max_bytes="max_header_bytes"
+      min_bytes="min_header_bytes"
+      mean_bytes="mean_header_bytes"
+      median_bytes="median_header_bytes"
+      mode_bytes="mode_header_bytes"
+    />
+    <forward 
+      total_bytes="fwd_total_header_bytes"
+      median_bytes="fwd_median_header_bytes"
+      mode_bytes="fwd_mode_header_bytes"
+      max_bytes="fwd_max_header_bytes"
+      min_bytes="fwd_min_header_bytes"
+      mean_bytes="fwd_mean_header_bytes"
+    />
+  </headers>
+  <flags>
+    <overall 
+      total_rst_flag_percentage="rst_flag_percentage_in_total"
+      total_syn_flag_percentage="syn_flag_percentage_in_total"
+      rst_flag_counts="rst_flag_counts"
+    />
+    <forward 
+      total_syn_flag_percentage="fwd_syn_flag_percentage_in_total"
+      psh_flag_percentage_in_forward_packets="fwd_psh_flag_percentage_in_fwd_packets"
+      syn_flag_percentage_in_forward_packets="fwd_syn_flag_percentage_in_fwd_packets"
+    />
+    <backward 
+      total_rst_flag_percentage="bwd_rst_flag_percentage_in_total"
+      psh_flag_percentage_in_backward_packets="bwd_psh_flag_percentage_in_bwd_packets"
+      rst_flag_counts="bwd_rst_flag_counts"
+    />
+  </flags>
+  <inter_arrival_timing>
+    <overall 
+      median_packets="packets_IAT_median"
+      mode_packets="packets_IAT_mode"
+      mean_packets="packets_IAT_mean"
+      max_packets="packet_IAT_max"
+      min_packets="packet_IAT_min"
+      total_packets="packet_IAT_total"
+    />
+    <forward 
+      total_packets="fwd_packets_IAT_total"
+      mean_packets="fwd_packets_IAT_mean"
+      max_packets="fwd_packets_IAT_max"
+      min_packets="fwd_packets_IAT_min"
+      median_packets="fwd_packets_IAT_median"
+      mode_packets="fwd_packets_IAT_mode"
+    />
+    <backward   
+      total_packets="bwd_packets_IAT_total"
+      mode_bytes="bwd_packets_IAT_mode"      
+    />
+  </inter_arrival_timing>
+  <window>
+    <forward 
+      init_bytes="fwd_init_win_bytes"
+    />
+    <backward 
+      init_bytes="bwd_init_win_bytes"
+    />
+  </window>
+  <rates 
+    packets="packets_rate"
+    backward_packets="bwd_packets_rate"
+    forward_packets="fwd_packets_rate"
+  />
+</network_flow>

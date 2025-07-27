@@ -1,0 +1,78 @@
+<network_flow>
+  <meta label="{label}" activity="{activity}"/>
+  
+  <headers>
+    <overall
+      total_bytes="{total_header_bytes}" 
+      max_bytes="{max_header_bytes}"
+      min_bytes="{min_header_bytes}"
+      mean_bytes="{mean_header_bytes}"
+      median_bytes="{median_header_bytes}"
+      mode_bytes="{mode_header_bytes}"
+    />
+    <forward 
+      total_bytes="{fwd_total_header_bytes}"
+      median_bytes="{fwd_median_header_bytes}"
+      mode_bytes="{fwd_mode_header_bytes}"
+      max_bytes="{fwd_max_header_bytes}"
+      min_bytes="{fwd_min_header_bytes}"
+      mean_bytes="{fwd_mean_header_bytes}"
+    />
+  </headers>
+
+  <flags>
+    <overall 
+      total_rst_flag_percentage="{rst_flag_percentage_in_total}"
+      total_syn_flag_percentage="{syn_flag_percentage_in_total}"
+      rst_flag_counts="{rst_flag_counts}"
+    />
+    <forward 
+      total_syn_flag_percentage="{fwd_syn_flag_percentage_in_total}"
+      psh_flag_percentage_in_forward_packets="{fwd_psh_flag_percentage_in_fwd_packets}"
+      syn_flag_percentage_in_forward_packets="{fwd_syn_flag_percentage_in_fwd_packets}"
+    />
+    <backward 
+      total_rst_flag_percentage="{bwd_rst_flag_percentage_in_total}"
+      psh_flag_percentage_in_backward_packets="{bwd_psh_flag_percentage_in_bwd_packets}"
+      rst_flag_counts="{bwd_rst_flag_counts}"
+    />
+  </flags>
+
+  <inter_arrival_timing>
+    <overall 
+      median_packets="{packets_IAT_median}"
+      mode_packets="{packets_IAT_mode}"
+      mean_packets="{packets_IAT_mean}"
+      max_packets="{packet_IAT_max}"
+      min_packets="{packet_IAT_min}"
+      total_packets="{packet_IAT_total}"
+    />
+    <forward 
+      total_packets="{fwd_packets_IAT_total}"
+      mean_packets="{fwd_packets_IAT_mean}"
+      max_packets="{fwd_packets_IAT_max}"
+      min_packets="{fwd_packets_IAT_min}"
+      median_packets="{fwd_packets_IAT_median}"
+      mode_packets="{fwd_packets_IAT_mode}"
+    />
+    <backward   
+      total_packets="{bwd_packets_IAT_total}"
+      mode_bytes="{bwd_packets_IAT_mode}"      
+    />
+  </inter_arrival_timing>
+
+  <window>
+    <forward 
+      init_bytes="{fwd_init_win_bytes}"
+    />
+    <backward 
+      init_bytes="{bwd_init_win_bytes}"
+    />
+  </window>
+
+  <rates 
+    packets="{packets_rate}"
+    backward_packets="{bwd_packets_rate}"
+    forward_packets="{fwd_packets_rate}"
+  />
+</network_flow>

@@ -1,0 +1,170 @@
+{
+  "activity": {
+    "path": "meta",
+    "attribute": "activity"
+  },
+  "bwd_init_win_bytes": {
+    "path": "window/backward",
+    "attribute": "init_bytes"
+  },
+  "bwd_packets_IAT_mode": {
+    "path": "inter_arrival_timing/backward",
+    "attribute": "mode_bytes"
+  },
+  "bwd_packets_IAT_total": {
+    "path": "inter_arrival_timing/backward",
+    "attribute": "total_packets"
+  },
+  "bwd_packets_rate": {
+    "path": "rates",
+    "attribute": "backward_packets"
+  },
+  "bwd_psh_flag_percentage_in_bwd_packets": {
+    "path": "flags/backward",
+    "attribute": "psh_flag_percentage_in_backward_packets"
+  },
+  "bwd_rst_flag_counts": {
+    "path": "flags/backward",
+    "attribute": "rst_flag_counts"
+  },
+  "bwd_rst_flag_percentage_in_total": {
+    "path": "flags/backward",
+    "attribute": "total_rst_flag_percentage"
+  },
+  "fwd_init_win_bytes": {
+    "path": "window/forward",
+    "attribute": "init_bytes"
+  },
+  "fwd_max_header_bytes": {
+    "path": "headers/forward",
+    "attribute": "max_bytes"
+  },
+  "fwd_mean_header_bytes": {
+    "path": "headers/forward",
+    "attribute": "mean_bytes"
+  },
+  "fwd_median_header_bytes": {
+    "path": "headers/forward",
+    "attribute": "median_bytes"
+  },
+  "fwd_min_header_bytes": {
+    "path": "headers/forward",
+    "attribute": "min_bytes"
+  },
+  "fwd_mode_header_bytes": {
+    "path": "headers/forward",
+    "attribute": "mode_bytes"
+  },
+  "fwd_packets_IAT_max": {
+    "path": "inter_arrival_timing/forward",
+    "attribute": "max_packets"
+  },
+  "fwd_packets_IAT_mean": {
+    "path": "inter_arrival_timing/forward",
+    "attribute": "mean_packets"
+  },
+  "fwd_packets_IAT_median": {
+    "path": "inter_arrival_timing/forward",
+    "attribute": "median_packets"
+  },
+  "fwd_packets_IAT_min": {
+    "path": "inter_arrival_timing/forward",
+    "attribute": "min_packets"
+  },
+  "fwd_packets_IAT_mode": {
+    "path": "inter_arrival_timing/forward",
+    "attribute": "mode_packets"
+  },
+  "fwd_packets_IAT_total": {
+    "path": "inter_arrival_timing/forward",
+    "attribute": "total_packets"
+  },
+  "fwd_packets_rate": {
+    "path": "rates",
+    "attribute": "forward_packets"
+  },
+  "fwd_psh_flag_percentage_in_fwd_packets": {
+    "path": "flags/forward",
+    "attribute": "psh_flag_percentage_in_forward_packets"
+  },
+  "fwd_syn_flag_percentage_in_fwd_packets": {
+    "path": "flags/forward",
+    "attribute": "syn_flag_percentage_in_forward_packets"
+  },
+  "fwd_syn_flag_percentage_in_total": {
+    "path": "flags/forward",
+    "attribute": "total_syn_flag_percentage"
+  },
+  "fwd_total_header_bytes": {
+    "path": "headers/forward",
+    "attribute": "total_bytes"
+  },
+  "label": {
+    "path": "meta",
+    "attribute": "label"
+  },
+  "max_header_bytes": {
+    "path": "headers/overall",
+    "attribute": "max_bytes"
+  },
+  "mean_header_bytes": {
+    "path": "headers/overall",
+    "attribute": "mean_bytes"
+  },
+  "median_header_bytes": {
+    "path": "headers/overall",
+    "attribute": "median_bytes"
+  },
+  "min_header_bytes": {
+    "path": "headers/overall",
+    "attribute": "min_bytes"
+  },
+  "mode_header_bytes": {
+    "path": "headers/overall",
+    "attribute": "mode_bytes"
+  },
+  "packet_IAT_max": {
+    "path": "inter_arrival_timing/overall",
+    "attribute": "max_packets"
+  },
+  "packet_IAT_min": {
+    "path": "inter_arrival_timing/overall",
+    "attribute": "min_packets"
+  },
+  "packet_IAT_total": {
+    "path": "inter_arrival_timing/overall",
+    "attribute": "total_packets"
+  },
+  "packets_IAT_mean": {
+    "path": "inter_arrival_timing/overall",
+    "attribute": "mean_packets"
+  },
+  "packets_IAT_median": {
+    "path": "inter_arrival_timing/overall",
+    "attribute": "median_packets"
+  },
+  "packets_IAT_mode": {
+    "path": "inter_arrival_timing/overall",
+    "attribute": "mode_packets"
+  },
+  "packets_rate": {
+    "path": "rates",
+    "attribute": "packets"
+  },
+  "rst_flag_counts": {
+    "path": "flags/overall",
+    "attribute": "rst_flag_counts"
+  },
+  "rst_flag_percentage_in_total": {
+    "path": "flags/overall",
+    "attribute": "total_rst_flag_percentage"
+  },
+  "syn_flag_percentage_in_total": {
+    "path": "flags/overall",
+    "attribute": "total_syn_flag_percentage"
+  },
+  "total_header_bytes": {
+    "path": "headers/overall",
+    "attribute": "total_bytes"
+  }
+}
